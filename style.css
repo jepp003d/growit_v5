@@ -24,3 +24,22 @@ h2 {
     padding: 50px 0px 50px 0px !important;
 }
 */
+
+
+
+
+
+/* teksteffekt */
+.body-content__rollig-text {
+  white-space: nowrap;
+  font-family: 'raleway', serif;
+  margin-top: 6vw;
+     }
+
+    .rolling-text__text {
+      font-size: 7.5vw;
+      display: inline-block;
+    }
+
+/* teksteffekt slut*/
+
