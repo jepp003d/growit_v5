@@ -1,4 +1,6 @@
-body {}
+body {
+    /*    overflow-x: hidden;*/
+}
 
 main {
     background-image: url(img/froe.jpg);
@@ -6,40 +8,62 @@ main {
 
 .content-txt {
     padding-left: 100px !important;
-
 }
 
-/*
-h2 {
-    padding-left: 50px !important;
-}
-*/
-
-/*
-.content-img1 {
-    padding: 50px 0px 50px 0px !important;
+.content-img-sek-1 {
+    transform: scale(0.8) translateX(-120px) translateY(100px);
 }
 
-.content-img2 {
-    padding: 50px 0px 50px 0px !important;
+#section3 {
+    background-image: url(img/landing/sektion3/groenbakke.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
-*/
+
+#section5 {
+    background-image: url(img/landing/sektion5/heks2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h3 {
+
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 200px 0 200px 0;
+    color: white;
+}
 
 
 
-
-
-/* teksteffekt */
 .body-content__rollig-text {
-  white-space: nowrap;
-  font-family: 'raleway', serif;
-  margin-top: 6vw;
-     }
+    white-space: nowrap;
+    font-family: raleway;
+    font-weight: bold;
+    margin-top: 6vw;
+}
 
-    .rolling-text__text {
-      font-size: 7.5vw;
-      display: inline-block;
-    }
+.rolling-text__text {
+    font-size: 7.5vw;
+    display: inline-block;
+}
 
-/* teksteffekt slut*/
+.body-content__rollig-text-text {
+    white-space: nowrap;
+    font-family: raleway;
+    font-weight: bold;
+    margin-top: 6vw;
+}
 
+.rolling-text__text__text {
+    font-size: 7.5vw;
+    display: inline-block;
+}
+
+.overflow {
+    overflow: scroll;
+}
