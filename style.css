@@ -2,17 +2,49 @@ body {
     /*    overflow-x: hidden;*/
 }
 
+@font-face {
+    font-family: manropeLight;
+    src: url(web_manrope/Manrope-Light.woff);
+}
+
+@font-face {
+    font-family: manropeBold;
+    src: url(web_manrope/Manrope-Bold.woff);
+}
+
+@font-face {
+    font-family: manropeRegular;
+    src: url(web_manrope/Manrope-Regular.woff);
+}
+
 main {
     background-image: url(img/froe.jpg);
 }
 
-.content-txt {
-    padding-left: 100px !important;
+h1 {
+    font-size: 10rem;
+    overflow: auto;
+    white-space: nowrap;
 }
 
-.content-img-sek-1 {
-    transform: scale(0.8) translateX(-120px) translateY(100px);
+h2 {
+    font-family: raleway;
+    font-weight: bold;
+    font-size: calc(1rem + 1vw);
 }
+
+p {
+    font-size: calc(0.8rem + 0.25vw);
+    font-family: manropeRegular;
+}
+
+.overflow {}
+
+.content-img-sek-1 {
+    /*    transform: scale(0.5) translateX(-120px) translateY(-900px);*/
+}
+
+
 
 #section3 {
     background-image: url(img/landing/sektion3/groenbakke.jpg);
@@ -32,14 +64,15 @@ main {
 
 h3 {
 
-    font-size: 4rem;
-    font-weight: bold;
+    font-size: calc(2rem + 4vw);
+    font-weight: 500;
     padding: 200px 0 200px 0;
     color: white;
 }
 
 
 
+/*
 .body-content__rollig-text {
     white-space: nowrap;
     font-family: raleway;
@@ -63,7 +96,16 @@ h3 {
     font-size: 7.5vw;
     display: inline-block;
 }
+*/
 
-.overflow {
-    overflow: scroll;
+
+
+@media screen and (min-width: 992px) {
+    .content-txt {
+        padding-left: 100px !important;
+    }
+
+    .content-img-sek-1 {
+        transform: scale(0.8) translateX(-120px) translateY(100px);
+    }
 }
