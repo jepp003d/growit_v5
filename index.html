@@ -27,11 +27,11 @@
 -->
 
 
-    <!--
-    <div>
-        <h1>BRING COLOR BACK TO EARTH</h1>
+    <div class="quote-translate1  position-absolute ">
+        <h1 class=" ">
+            BRING COLOR BACK TO EARTH
+        </h1>
     </div>
--->
 
     <main>
 
@@ -206,6 +206,25 @@
             x: -($text.width()),
             ease: Linear.easeNone,
             repeat: -1
+        });
+
+        gsap.fromTo(".quote-translate1", {
+            x: 10
+        }, {
+            x: -1500,
+
+            duration: 1,
+
+            scrollTrigger: {
+                trigger: ".splash",
+                ease: "power2.inOut",
+                pin: true,
+                markers: true,
+                start: "top top",
+                end: "bottom top",
+                scrub: true,
+
+            }
         });
 
 
