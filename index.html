@@ -16,6 +16,12 @@
 <body>
 
     <main>
+       <div class="body-content__rollig-text rolling-text" data-reveal>
+  <div class="rolling-text__text text-uppercase">
+    Put nature back together
+  </div>
+</div>
+
         <section id="section1">
             <div class="container">
                 <div class="row row-cols-3  g-0 justify-content-center align-items-center">
@@ -41,8 +47,13 @@
                         </p>
                     </div>
                 </div>
+
+
+
             </div>
         </section>
+
+
 
 
 
@@ -66,14 +77,24 @@
     <script src="ScrollTrigger.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
-    <script>
-        gsap.registerPlugin(ScrollTrigger);
+
+        <script>
+let $text = $('.rolling-text .rolling-text__text');
+let $wrap = $('.rolling-text');
+
+$text.clone().appendTo($wrap);
+
+TweenMax.to($wrap, 10, {
+  x: -($text.width()),
+  ease: Linear.easeNone,
+  repeat: -1
+});
+            </script>
 
 
 
 
-
-
+ <script>
 
         //        gsap.utils.toArray(".comparisonSection").forEach(section => {
         // let tl = gsap.timeline({
