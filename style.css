@@ -1,6 +1,8 @@
 body {
-    /*    overflow-x: hidden;*/
+
     overflow-x: hidden;
+    background-image: url(img/froe.jpg);
+    background-position: center;
 }
 
 @font-face {
@@ -18,37 +20,44 @@ body {
     src: url(web_manrope/Manrope-Regular.woff);
 }
 
-main {
-    background-image: url(img/froe.jpg);
-}
+main {}
+
+/*
+.quote-translate {
+    transform: translateY(50px);
+    overflow-x: hidden;
+
+}*/
 
 .quote-translate1 {
-    /*    bottom: 10vw;*/
-
-    /*    transform: translate3d(-1268.85px, 0px, 0px);*/
-    /*    top: -35vw;*/
     z-index: 10;
-    /*    overflow: hidden;*/
-
-}
-
-
-
-.quote-translate1 h1 {
-    /*    width: 400vw;*/
-    text-overflow: clip;
     white-space: nowrap;
-    font-size: calc(5rem + 8vw);
-    color: black;
-    font-weight: bold;
-
+    padding: 0px 0 0px 0;
 }
 
-h1 {
-    font-size: 10rem;
+.quote-translate2 {
+    z-index: 10;
+    white-space: nowrap;
+    padding: 0px 0 0px 0;
+}
+
+.quote-translate1 h1,
+.quote-translate2 h1 {
+    /*    font-size: 10rem;*/
+    font-size: calc(2.58rem + 6.5vw);
     overflow: clip;
     white-space: nowrap;
+    font-family: raleway;
+    font-weight: bold;
 }
+
+
+
+.splash .row {
+    overflow: hidden;
+}
+
+
 
 h2 {
     font-family: raleway;
@@ -83,6 +92,14 @@ p {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+}
+
+.splash {
+    background-image: url(img/landing/splash/fake_bg.png);
+    background-size: cover;
+
+
+
 }
 
 h3 {
@@ -130,5 +147,9 @@ h3 {
 
     .content-img-sek-1 {
         transform: scale(0.8) translateX(-120px) translateY(100px);
+    }
+
+    main {
+        /*        background-image: url(img/froe.jpg);*/
     }
 }
