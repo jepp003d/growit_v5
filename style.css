@@ -126,7 +126,7 @@ p {
     background-image: url(img/landing/sektion3/groenbakke.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+
     background-position: center;
 }
 
@@ -134,7 +134,7 @@ p {
     background-image: url(img/landing/sektion5/heks2);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+
     background-position: center;
 }
 
@@ -166,7 +166,21 @@ p {
         transform: scale(0.8) translateX(-120px) translateY(100px);
     }
 
+    #section3 {
+        background-image: url(img/landing/sektion3/groenbakke.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
 
+    #section5 {
+        background-image: url(img/landing/sektion5/heks2);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
 }
 
 
