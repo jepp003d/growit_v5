@@ -3,6 +3,73 @@ html {
 }
 
 
+@font-face {
+    font-family: manropeLight;
+    src: url(web_manrope/Manrope-Light.woff);
+}
+
+@font-face {
+    font-family: manropeBold;
+    src: url(web_manrope/Manrope-Bold.woff);
+}
+
+@font-face {
+    font-family: manropeRegular;
+    src: url(web_manrope/Manrope-Regular.woff);
+}
+
+@font-face {
+    font-family: manropeMedium;
+    src: url(web_manrope/Manrope-Medium.woff);
+}
+
+h1 {
+    font-family: Raleway;
+}
+
+h2 {
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: calc(1rem + 1vw);
+}
+
+h6 {
+    font-family: raleway;
+    line-height: 1.5rem;
+    font-size: calc(0.8rem + 0.3vw);
+    color: white;
+}
+
+h3 {
+    font-size: calc(2rem + 2vw);
+    font-weight: 600;
+    line-height: calc(30px + 2vw);
+    padding: 200px 0 200px 0;
+    color: white;
+}
+
+h4 {
+    font-family: Raleway;
+    font-weight: 600;
+     font-size: calc(0.9rem + 0.4vw);
+
+}
+
+p {
+    font-size: calc(0.8rem + 0.4vw);
+    font-family: manropeRegular;
+}
+
+a {
+    font-size: calc(0.8rem + 0.4vw);
+    font-family: manropeMedium;
+    text-decoration: none;
+    letter-spacing: 0.19rem;
+    color: black;
+    line-height: 0;
+
+
+}
 
 
 
