@@ -39,7 +39,7 @@
     </div>
 
 
-    <section class="splash">
+    <section class="splash hue3">
 
         <div class="container-fluid position-relative">
             <div class="row align-items-center">
@@ -129,7 +129,7 @@
 
 
 
-                    <img class="img-fluid align-self-center content-img2 col-6 col-lg-3" src="img/landing/sektion2/web3backg.jpg" alt="">
+                    <img class="img-fluid align-self-center content-img2 col-6 col-lg-3 hue0" src="img/landing/sektion2/web3backg.jpg" alt="">
 
 
                     <div class="content-txt col-lg-6 px-3 px-lg-0">
@@ -151,7 +151,7 @@
             </div>
         </section>
 
-        <section id="section3" class="nature-section">
+        <section id="section3" class="nature-section hue4">
             <div class="container">
                 <div class="row ">
                     <h3 class="text-center ">WE AIM TO <br> PUSH FOR A <br> SUSTAINABLE <br> FUTURE</h3>
@@ -182,7 +182,7 @@
             <div class="container g-0">
                 <div class="row row-cols-lg-3  g-0 justify-content-center align-items-center flex-wrap-reverse">
                     <img class="img-fluid align-self-center content-img1 py-lg-5 col-6 col-lg-3" src="img/landing/sektion4/hmgoepprod.jpg" alt="">
-                    <img class="img-fluid align-self-center content-img2 col-6 col-lg-3" src="img/landing/sektion4/web6_backg.jpg" alt="">
+                    <img class="img-fluid align-self-center content-img2 col-6 col-lg-3 hue1" src="img/landing/sektion4/web6_backg.jpg" alt="">
                     <div class="content-txt col-lg-6 px-3 px-lg-0">
                         <h2 class=" text-lg-start pt-2 pt-lg-0">BECOME BRAND AMBASSADOR</h2>
                         <p class="">How cool would it be if hundreds of thousands from across the world started planting #growit? By becoming an ambassador you can inspire others to make a difference - and win rewards while being a hero. By completing missions you earn points which can be translated in to discounts and other goodies. Also you get 10% off on all clothes at H&M when signing up as brand ambassador.
@@ -193,10 +193,10 @@
         </section>
 
 
-        <section id="section5" class="nature-section">
+        <section id="section5" class="nature-section hue5">
             <div class="container ">
                 <div class="row ">
-                    <h3 class="text-center ">WE MAKE IT <br> YOU WEAR IT <br> LET'S CHANGE <br> IT TOGETHER</h3>
+                    <h3 class="text-center h3trigger">WE MAKE IT <br> YOU WEAR IT <br> LET'S CHANGE <br> IT TOGETHER</h3>
                 </div>
             </div>
 
@@ -224,7 +224,7 @@
             <div class="container g-0">
                 <div class="row row-cols-lg-3  g-0 justify-content-center align-items-center flex-wrap-reverse">
                     <img class="img-fluid align-self-center content-img1 py-lg-5 col-6 col-lg-3" src="img/landing/sektion6/greenlady.jpg" alt="">
-                    <img class="img-fluid align-self-center content-img2 col-6 col-lg-3" src="img/landing/sektion6/greenwood.jpg" alt="">
+                    <img class="img-fluid align-self-center content-img2 col-6 col-lg-3  hue2" src="img/landing/sektion6/greenwoods.jpg" alt="">
                     <div class="content-txt col-lg-6 px-3 px-lg-0">
                         <h2 class=" text-lg-start pt-2 pt-lg-0">SO. JOINING THE MOVEMENT</h2>
                         <p class="">How cool would it be if hundreds of thousands from across the world started planting #growit? By becoming an ambassador you can inspire others to make a difference - and win rewards while being a hero. By completing missions you earn points which can be translated in to discounts and other goodies. Also you get 10% off on all clothes at H&M when signing up as brand ambassador.
@@ -237,7 +237,7 @@
 
     </main>
 
-<footer>
+    <footer>
 
         <div class="container-fluid d-flex align-items-center">
             <div class="row row-cols-1 row-cols-3">
@@ -249,7 +249,7 @@
 
                 <div class="card col-12 col-md-4  my-5">
                     <div class="card-body mx-5">
-                       <h4 class="card-title text-uppercase">Pages</h4>
+                        <h4 class="card-title text-uppercase">Pages</h4>
                         <ul class="list-unstyled">
                             <li>
                                 <h6 class="card-title">#growit</h6>
@@ -272,11 +272,11 @@
                         <h4 class="card-title text-uppercase">Reduse. Reuse. Recycle.</h4>
                         <h6>Sign up to our newsletter and receive tips and tricks on how to recycle and how you can enhance biodiversity in your everyday life.</h6><br>
                         <div class="input-group">
-                                            <input type="name" class="form-control" placeholder="EMAIL"required>
-                                             <span class="input-group-btn text-uppercase">
-                                                <input type="submit" class="btn btn-primary" value="Subscribe">
-                                            </span>
-                                        </div>
+                            <input type="name" class="form-control" placeholder="EMAIL" required>
+                            <span class="input-group-btn text-uppercase">
+                                <input type="submit" class="btn btn-primary" value="Subscribe">
+                            </span>
+                        </div>
 
                     </div>
 
@@ -321,6 +321,12 @@
                 // setup animations and ScrollTriggers for screens 800px wide or greater (desktop) here...
                 // These ScrollTriggers will be reverted/killed when the media query doesn't match anymore.
 
+                //SATURATION
+
+
+
+
+                //SATURATION
                 gsap.fromTo(".quote-translate1", {
                     x: 10
                 }, {
@@ -332,7 +338,7 @@
                         trigger: ".splash",
                         ease: "power2.inOut",
                         pin: true,
-                        markers: true,
+
                         start: "top top",
                         end: "bottom top",
                         scrub: true,
@@ -351,7 +357,7 @@
                         trigger: ".quote2",
                         ease: "power2.inOut",
 
-                        markers: true,
+
                         start: "top center",
                         end: "bottom top",
                         scrub: true,
@@ -370,7 +376,7 @@
                         trigger: ".quote3",
                         ease: "power2.inOut",
 
-                        markers: true,
+
                         start: "top 80%",
                         end: "bottom top",
                         scrub: true,
@@ -389,7 +395,7 @@
                         trigger: ".quote4",
                         ease: "power2.inOut",
 
-                        markers: true,
+
                         start: "top 70%",
                         end: "bottom top",
                         scrub: true,
@@ -410,7 +416,7 @@
                         trigger: ".splash",
                         ease: "power2.inOut",
                         pin: true,
-                        markers: true,
+
                         start: "top top",
                         end: "bottom top",
                         scrub: true,
@@ -429,7 +435,7 @@
                         trigger: ".quote2",
                         ease: "power2.inOut",
 
-                        markers: true,
+
                         start: "top 35%",
                         end: "bottom top",
                         scrub: true,
@@ -448,7 +454,7 @@
                         trigger: ".quote3",
                         ease: "power2.inOut",
 
-                        markers: true,
+
                         start: "top 50%",
                         end: "bottom top",
                         scrub: true,
@@ -467,7 +473,7 @@
                         trigger: ".quote4",
                         ease: "power2.inOut",
 
-                        markers: true,
+
                         start: "top 90%",
                         end: "bottom top",
                         scrub: true,
@@ -492,7 +498,7 @@
                         trigger: ".splash",
                         ease: "power2.inOut",
                         pin: true,
-                        markers: true,
+
                         start: "top top",
                         end: "bottom top",
                         scrub: true,
@@ -511,7 +517,6 @@
                         trigger: ".quote2",
                         ease: "power2.inOut",
 
-                        markers: true,
                         start: "top 90%",
                         end: "bottom top",
                         scrub: true,
@@ -530,7 +535,7 @@
                         trigger: ".quote3",
                         ease: "power2.inOut",
 
-                        markers: true,
+
                         start: "top 90%",
                         end: "bottom top",
                         scrub: true,
@@ -549,7 +554,7 @@
                         trigger: ".quote4",
                         ease: "power2.inOut",
 
-                        markers: true,
+
                         start: "top 90%",
                         end: "bottom top",
                         scrub: true,
@@ -569,7 +574,77 @@
 
         });
 
+        gsap.from(".hue0", {
+            filter: 'grayscale(1)',
+            duration: 0.3,
+            scrollTrigger: {
+                trigger: ".hue0",
+                start: "top center",
+                end: "60% center",
 
+                scrub: true
+            },
+        });
+
+        gsap.from(".hue1", {
+            filter: 'grayscale(1)',
+            duration: 0.3,
+            scrollTrigger: {
+                trigger: ".hue1",
+                start: "top center",
+                end: "60% center",
+
+                scrub: true
+            },
+        });
+
+        gsap.from(".hue2", {
+            filter: 'grayscale(1)',
+            duration: 0.3,
+            scrollTrigger: {
+                trigger: ".hue2",
+                start: "top center",
+                end: "60% center",
+
+                scrub: true
+            },
+        });
+
+        gsap.from(".hue3", {
+            filter: 'grayscale(1)',
+            duration: 0.3,
+            scrollTrigger: {
+                trigger: "h1",
+                start: "10% 30%",
+                end: "100% top",
+
+                scrub: true
+            },
+        });
+
+        gsap.from(".hue4", {
+            filter: 'grayscale(1)',
+            duration: 0.3,
+            scrollTrigger: {
+                trigger: "#section2",
+                start: "70% 50%",
+                end: "bottom 50%",
+                markers: true,
+                scrub: true
+            },
+        });
+
+        gsap.from(".hue5", {
+            filter: 'grayscale(1)',
+            duration: 0.3,
+            scrollTrigger: {
+                trigger: "#section4",
+                start: "70% 50%",
+                end: "bottom 50%",
+
+                scrub: true
+            },
+        });
 
         //        gsap.utils.toArray(".comparisonSection").forEach(section => {
         // let tl = gsap.timeline({
@@ -602,25 +677,7 @@
         // }, 0);
         // });
 
-
-
-
-
-
-        //        gsap.from(".hue0", {
-        // filter: 'grayscale(1)',
-        // duration: 0.3,
-        // scrollTrigger: {
-        // trigger: ".hue0",
-        // start: "top center",
-        // end: "60% center",
-        //
-        // scrub: true
-        // },
-        // });
-
     </script>
 </body>
 
 </html>
-
