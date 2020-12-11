@@ -87,6 +87,19 @@ h2 {
     font-size: calc(1rem + 1vw);
 }
 
+h6 {
+    font-family: raleway;
+    line-height: 1.5rem;
+    font-size: calc(0.8rem + 0.3vw);
+}
+
+h3 {
+    font-family: raleway;
+    font-size: calc(1rem + 0.3vw);
+}
+
+
+
 p {
     font-size: calc(0.8rem + 0.4vw);
     font-family: manropeRegular;
@@ -190,4 +203,70 @@ h3 {
 
 
 
+/* footer */
 
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+
+
+
+.btn-primary {
+background-color: transparent;
+  border: 0.5px solid black;
+    text-transform: uppercase;
+
+    font-weight: 500;
+    color: gray;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+    color: black;
+    background-color: transparent;
+    border-color:  black;
+
+}
+
+.btn-primary:focus {
+    box-shadow: none;
+}
+
+.col-md-3 {
+   padding-right: 0px;
+padding-left: 0px;
+}
+
+
+
+.btn:focus {
+     box-shadow: none;
+    	border-color: black;
+    background-color: grey;
+}
+.form-control {
+    border-radius: 0px;
+    background-color: transparent;
+    border: 0.5px solid black;
+
+}
+
+.btn:hover {
+    background: grey;
+	border: 0.5px solid black;
+
+}
+
+.form-control:focus {
+    background-color: transparent;
+    box-shadow: none;
+    	border-color: black;
+}
+
+
+/* footer slut */
