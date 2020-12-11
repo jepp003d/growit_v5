@@ -4,8 +4,9 @@ body {
 
 main {
     background-image: url(img/froe.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    /*    background-repeat: no-repeat;*/
+    background-size: contain;
 }
 
 //*------------FONTE-------------*//
@@ -23,6 +24,11 @@ main {
 @font-face {
     font-family: manropeRegular;
     src: url(web_manrope/Manrope-Regular.woff);
+}
+
+@font-face {
+    font-family: manropeMedium;
+    src: url(web_manrope/Manrope-Medium.woff);
 }
 
 /*------------FONTE-SLUT-------------*/
@@ -82,8 +88,8 @@ main {
 
 /*------------------TEXT STYLE-----------------*/
 h2 {
-    font-family: raleway;
-    font-weight: 900;
+    font-family: helvetica;
+    font-weight: 500;
     font-size: calc(1rem + 1vw);
 }
 
@@ -106,11 +112,24 @@ h3 {
     color: white;
 }
 
-
-
 p {
     font-size: calc(0.8rem + 0.4vw);
     font-family: manropeRegular;
+}
+
+a {
+    font-size: calc(0.8rem + 0.4vw);
+    font-family: manropeMedium;
+    text-decoration: none;
+
+    color: black;
+    line-height: 0;
+
+
+}
+
+svg {
+    padding-bottom: 2px;
 }
 
 /*------------------TEXT STYLE SLUT-----------------*/
@@ -145,9 +164,7 @@ p {
     background-repeat: no-repeat;
 }
 
-#section6 {
-    padding-bottom: 500px !important;
-}
+#section6 {}
 
 /*------------------SEKTIONER-SLUT-----------------*/
 
