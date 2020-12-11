@@ -1,8 +1,14 @@
 body {
-
     overflow-x: hidden;
-
 }
+
+main {
+    background-image: url(img/froe.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+//*------------FONTE-------------*//
 
 @font-face {
     font-family: manropeLight;
@@ -19,18 +25,10 @@ body {
     src: url(web_manrope/Manrope-Regular.woff);
 }
 
-main {
-    background-image: url(img/froe.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
+/*------------FONTE-SLUT-------------*/
 
-/*
-.quote-translate {
-    transform: translateY(50px);
-    overflow-x: hidden;
 
-}*/
+/*------------------QUOTES OVER SKÆRM-----------------*/
 
 .quote-translate1 {
     z-index: 10;
@@ -79,8 +77,10 @@ main {
     overflow: hidden;
 }
 
+/*------------------QUOTES OVER SKÆRM SLUT-----------------*/
 
 
+/*------------------TEXT STYLE-----------------*/
 h2 {
     font-family: raleway;
     font-weight: 900;
@@ -93,9 +93,17 @@ h6 {
     font-size: calc(0.8rem + 0.3vw);
 }
 
-h3 {
+footer h3 {
     font-family: raleway;
     font-size: calc(1rem + 0.3vw);
+}
+
+h3 {
+    font-size: calc(2rem + 2vw);
+    font-weight: 600;
+    line-height: calc(30px + 2vw);
+    padding: 200px 0 200px 0;
+    color: white;
 }
 
 
@@ -105,11 +113,9 @@ p {
     font-family: manropeRegular;
 }
 
-.overflow {}
+/*------------------TEXT STYLE SLUT-----------------*/
 
-.content-img-sek-1 {
-    /*    transform: scale(0.5) translateX(-120px) translateY(-900px);*/
-}
+/*------------------SEKTIONER-----------------*/
 
 #section2,
 #section4 {
@@ -143,42 +149,11 @@ p {
     padding-bottom: 500px !important;
 }
 
-h3 {
-
-    font-size: calc(2rem + 2vw);
-    font-weight: 600;
-    line-height: calc(30px + 2vw);
-    padding: 200px 0 200px 0;
-    color: white;
-}
+/*------------------SEKTIONER-SLUT-----------------*/
 
 
 
-/*
-.body-content__rollig-text {
-    white-space: nowrap;
-    font-family: raleway;
-    font-weight: bold;
-    margin-top: 6vw;
-}
 
-.rolling-text__text {
-    font-size: 7.5vw;
-    display: inline-block;
-}
-
-.body-content__rollig-text-text {
-    white-space: nowrap;
-    font-family: raleway;
-    font-weight: bold;
-    margin-top: 6vw;
-}
-
-.rolling-text__text__text {
-    font-size: 7.5vw;
-    display: inline-block;
-}
-*/
 
 
 
@@ -191,9 +166,7 @@ h3 {
         transform: scale(0.8) translateX(-120px) translateY(100px);
     }
 
-    main {
-        /*        background-image: url(img/froe.jpg);*/
-    }
+
 }
 
 
@@ -214,8 +187,8 @@ h3 {
 
 
 .btn-primary {
-background-color: transparent;
-  border: 0.5px solid black;
+    background-color: transparent;
+    border: 0.5px solid black;
     text-transform: uppercase;
 
     font-weight: 500;
@@ -229,7 +202,7 @@ background-color: transparent;
 .btn-primary:not(:disabled):not(.disabled):active {
     color: black;
     background-color: transparent;
-    border-color:  black;
+    border-color: black;
 
 }
 
@@ -238,17 +211,18 @@ background-color: transparent;
 }
 
 .col-md-3 {
-   padding-right: 0px;
-padding-left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 
 
 .btn:focus {
-     box-shadow: none;
-    	border-color: black;
+    box-shadow: none;
+    border-color: black;
     background-color: grey;
 }
+
 .form-control {
     border-radius: 0px;
     background-color: transparent;
@@ -258,14 +232,14 @@ padding-left: 0px;
 
 .btn:hover {
     background: grey;
-	border: 0.5px solid black;
+    border: 0.5px solid black;
 
 }
 
 .form-control:focus {
     background-color: transparent;
     box-shadow: none;
-    	border-color: black;
+    border-color: black;
 }
 
 
