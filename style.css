@@ -4,7 +4,7 @@ body {
 
 main {
     background-image: url(img/froe.jpg);
-    background-position: 50% 100%;
+    background-position: 20% 100%;
     /*    background-repeat: no-repeat;*/
     background-size: contain;
 }
@@ -39,7 +39,7 @@ main {
 .quote-translate1 {
     z-index: 10;
     white-space: nowrap;
-    padding: 300px 0 300px 0;
+    padding: 300px 0 200px 0;
 }
 
 .quote-translate2,
@@ -97,10 +97,13 @@ h6 {
     font-family: raleway;
     line-height: 1.5rem;
     font-size: calc(0.8rem + 0.3vw);
+    color: white;
 }
 
+
+
 footer h3 {
-    font-family: raleway;
+    font-family: Raleway;
     font-size: calc(1rem + 0.3vw);
 }
 
@@ -112,6 +115,12 @@ h3 {
     color: white;
 }
 
+h4 {
+    font-family: Raleway;
+    color: white;
+
+}
+
 p {
     font-size: calc(0.8rem + 0.4vw);
     font-family: manropeRegular;
@@ -121,7 +130,7 @@ a {
     font-size: calc(0.8rem + 0.4vw);
     font-family: manropeMedium;
     text-decoration: none;
-
+    letter-spacing: 0.19rem;
     color: black;
     line-height: 0;
 
@@ -219,11 +228,11 @@ svg {
 
 .btn-primary {
     background-color: transparent;
-    border: 0.5px solid black;
+    border: 0.5px solid white;
     text-transform: uppercase;
 
-    font-weight: 500;
-    color: gray;
+    font-weight: 400;
+    color: white;
 }
 
 .btn {
@@ -233,7 +242,7 @@ svg {
 .btn-primary:not(:disabled):not(.disabled):active {
     color: black;
     background-color: transparent;
-    border-color: black;
+    border-color: white;
 
 }
 
@@ -250,28 +259,248 @@ svg {
 
 .btn:focus {
     box-shadow: none;
-    border-color: black;
+    border-color: white;
     background-color: grey;
 }
 
 .form-control {
     border-radius: 0px;
     background-color: transparent;
-    border: 0.5px solid black;
+    border: 0.5px solid white;
 
 }
 
 .btn:hover {
-    background: grey;
-    border: 0.5px solid black;
+    background: white;
+    border: 0.5px solid white;
+    color: black;
 
 }
 
 .form-control:focus {
     background-color: transparent;
     box-shadow: none;
-    border-color: black;
+    border-color: white;
 }
 
 
 /* footer slut */
+
+
+/* sidebar */
+
+.side {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 10;
+    width: 50px;
+    border-right: 1px dashed rgba(black, .3);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .0875rem;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+.side_inner {
+    position: relative;
+    height: 100%;
+    padding: 30px;
+    white-space: nowrap;
+}
+
+a {
+    color: inherit;
+    word-spacing: 0;
+    letter-spacing: 0.09rem;
+    text-decoration: none;
+}
+
+#section7 a {
+     letter-spacing: 0rem;
+    font-family: raleway;
+    line-height: 1.5rem;
+    font-size: calc(0.8rem + 0.3vw);
+
+}
+
+.bottom {
+    top: auto;
+    bottom: 200px;
+     position: absolute;
+    left: 0;
+    transform: rotate(-90deg) perspective(1px);
+    transform-origin: 50px 50px;
+    height: 40px;
+    line-height: 70px;
+    white-space: nowrap;
+    word-spacing: .5rem;
+}
+
+
+
+@media screen and (min-width: 992px) {
+    .bottom {
+         bottom: 100px;
+    }
+
+}
+
+
+@media screen and (min-width: 992px) {
+    main {
+             background-repeat: no-repeat;
+    }
+
+}
+
+
+/* sidebar slut */
+
+
+.growit {
+  cursor: pointer;
+  padding-top: 10px;
+  position: fixed;
+left: 30px;
+    color: white;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.5rem;
+    z-index: 1;
+text-transform: lowercase !important;
+}
+
+/* Scroll down */
+
+#scroll-down:hover,
+#scroll-down:focus {
+    cursor: pointer;
+}
+
+#arrow-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+#arrow-wrapper-inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+
+#scroll-down {
+    display: inline-block;
+    position: relative;
+    padding-top: 25px;
+    text-align: center;
+    margin-top: -200px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.arrow-down {
+    display: block;
+    margin: 0 auto;
+    width: 13px;
+    height: 25px;
+}
+
+.arrow-down:after {}
+
+#scroll-down::before {
+    -webkit-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+    /* Safari 4+ */
+
+    -moz-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+    /* Fx 5+ */
+
+    -o-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+    /* Opera 12+ */
+
+    animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+    /* IE 10+, Fx 29+ */
+
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 2px;
+    height: 40px;
+    background: white;
+    content: ' ';
+}
+
+@-webkit-keyframes elasticus {
+    0% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+
+    50% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+
+    50.1% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+
+
+/* cursor */
+a {
+    cursor: crosshair;
+}
+
+
+
+#circle {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    border: 3px solid black;
+    pointer-events: none;
+}
+
+/* cursor slut */
+
