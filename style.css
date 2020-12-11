@@ -1,8 +1,7 @@
 body {
 
     overflow-x: hidden;
-    background-image: url(img/froe.jpg);
-    background-position: center;
+
 }
 
 @font-face {
@@ -20,7 +19,11 @@ body {
     src: url(web_manrope/Manrope-Regular.woff);
 }
 
-main {}
+main {
+    background-image: url(img/froe.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 /*
 .quote-translate {
@@ -32,28 +35,47 @@ main {}
 .quote-translate1 {
     z-index: 10;
     white-space: nowrap;
-    padding: 0px 0 0px 0;
+    padding: 300px 0 300px 0;
 }
 
-.quote-translate2 {
+.quote-translate2,
+.quote-translate3,
+.quote-translate4 {
     z-index: 10;
     white-space: nowrap;
     padding: 0px 0 0px 0;
 }
 
-.quote-translate1 h1,
-.quote-translate2 h1 {
+.quote-translate1 h1 {
     /*    font-size: 10rem;*/
-    font-size: calc(2.58rem + 6.5vw);
+    font-size: calc(2.58rem + 10vw);
     overflow: clip;
     white-space: nowrap;
     font-family: raleway;
-    font-weight: bold;
+    font-weight: 600;
+    color: white;
+
+}
+
+
+.quote-translate2 h1,
+.quote-translate3 h1,
+.quote-translate4 h1 {
+    /*    font-size: 10rem;*/
+    font-size: calc(1.5rem + 6.5vw);
+    overflow: clip;
+    white-space: nowrap;
+    font-family: raleway;
+    font-weight: 100;
+    letter-spacing: 5px;
 }
 
 
 
-.splash .row {
+.splash .row,
+.quote2 .row,
+.quote3 .row,
+.quote4 .row {
     overflow: hidden;
 }
 
@@ -61,12 +83,12 @@ main {}
 
 h2 {
     font-family: raleway;
-    font-weight: bold;
+    font-weight: 900;
     font-size: calc(1rem + 1vw);
 }
 
 p {
-    font-size: calc(0.8rem + 0.25vw);
+    font-size: calc(0.8rem + 0.4vw);
     font-family: manropeRegular;
 }
 
@@ -76,7 +98,10 @@ p {
     /*    transform: scale(0.5) translateX(-120px) translateY(-900px);*/
 }
 
-
+#section2,
+#section4 {
+    padding-bottom: 110px !important;
+}
 
 #section3 {
     background-image: url(img/landing/sektion3/groenbakke.jpg);
@@ -95,17 +120,21 @@ p {
 }
 
 .splash {
-    background-image: url(img/landing/splash/fake_bg.png);
+    background-image: url(img/landing/splash/splash-2.jpg);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
-
-
+#section6 {
+    padding-bottom: 500px !important;
 }
 
 h3 {
 
-    font-size: calc(2rem + 4vw);
-    font-weight: 500;
+    font-size: calc(2rem + 2vw);
+    font-weight: 600;
+    line-height: calc(30px + 2vw);
     padding: 200px 0 200px 0;
     color: white;
 }
