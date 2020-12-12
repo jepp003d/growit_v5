@@ -10,14 +10,19 @@ html {
 }
 
 #insta .content-txt,
-#events .content-txt {
+#events .content-txt,
+#collection .content-txt{
     padding-left: 0 !important;
 }
 
 #insta p,
-#events p {
+#events p,
+#collection p{
     margin: 0 !important;
 }
+
+
+
 
 
 
@@ -516,10 +521,7 @@ html {
 
 /* menu slut */
 
-/* sidebar */
 
-
-/* sidebar slut */
 
 
 /* Scroll down */
@@ -652,6 +654,8 @@ a {
 }
 
 
+/* sidebar */
+
 .side {
     position: absolute;
     left: 0;
@@ -684,7 +688,7 @@ a {
     white-space: nowrap;
     word-spacing: .5rem;
     color: white;
-    z-index: 1;
+    z-index: 10;
 }
 
 .side a {
@@ -695,15 +699,15 @@ a {
 }
 
 
-
 @media screen and (min-width: 992px) {
     .bottom {
-        bottom: 120px;
-        line-height: 30px;
+        bottom: 130px;
+        line-height: 33px;
     }
 
 }
 
+/* sidebar slut */
 
 @media screen and (min-width: 992px) {
     main {
