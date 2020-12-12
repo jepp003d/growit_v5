@@ -20,30 +20,33 @@
 </head>
 
 <body>
-    <!--
-    <div class="overflow">
-        <div class="body-content__rollig-text rolling-text" data-reveal>
-            <div class="rolling-text__text">
-                BRING COLOR BACK TO EARTH
-            </div>
-        </div>
-    </div>
--->
 
-    <div class="growit">
-        <a href="index.html" class=""></a>
-    </div>
+
+
+
+
 
     <div id="circle"></div>
 
-   <div class="cnt__nav">
+    <div class="cnt__nav">
         <nav>
             <ul>
-               <li><a href="index.html">Home</a></li>
-                <li><a href="instagram.html">Feed</a></li>
-               <li><a href="collection.html">Conscious Exclusive A/W 2020</a></li>
+                <li class="card1"><a href="index.html"><img class="img-fluid align-self-center" src="img/landing/splash/outlinehvid.svg" alt=""></a></li>
+                <li><a href="index.html">HOME</a></li>
+
+                <li><a href="collection.html">Conscious Exclusive A/W 2020</a></li>
+
                 <li><a href="brandambassador.html">Brand ambassador</a></li>
                 <li><a href="events.html">Events</a></li>
+                <li><a href="instagram.html">#Feed</a></li>
+
+
+
+
+
+
+
+
             </ul>
         </nav>
     </div>
@@ -274,11 +277,12 @@
 
     </main>
 
-    <section id="section7" class="" data-scrollcolor="#000000">
+    <section id="section7" class="" data-scrollcolor="#292727">
         <footer>
 
             <div class="container d-flex ">
-                <div class="row row-cols-md-3 justify-content-center flex-wrap-reverse align-items-center">
+                <div class="row row-cols-1 row-cols-md-3
+align-items-end justify-content-center flex-wrap-reverse ">
 
 
 
@@ -353,6 +357,14 @@
     </script>
 
     <script>
+        var card = $(".card1");
+
+        $(document).on("mousemove", function(e) {
+            var ax = -($(window).innerWidth() / 2 - e.pageX) / 20;
+            var ay = ($(window).innerHeight() / 2 - e.pageY) / 10;
+            card.attr("style", "transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg);-webkit-transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg);-moz-transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg)");
+        });
+
         window.addEventListener("load", function() {
             const scrollColorElems = document.querySelectorAll("[data-scrollcolor]");
             gsap.set("#section6", {
@@ -367,7 +379,7 @@
                     trigger: colorSection,
                     start: "60% 100%",
                     end: "bottom 40%",
-                    markers: "true",
+
                     onEnter: () => gsap.to("#section7", {
                         duration: 1,
                         backgroundColor: colorSection.dataset.scrollcolor,
@@ -699,7 +711,7 @@
                 trigger: "#section2",
                 start: "70% 50%",
                 end: "bottom 50%",
-                markers: true,
+
                 scrub: true
             },
         });
