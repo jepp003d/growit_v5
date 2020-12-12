@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS only -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -30,32 +30,32 @@
     </div>
 -->
 
-      <div class="growit">
-<a href="index.html" class=""></a>
-</div>
+    <div class="growit">
+        <a href="index.html" class=""></a>
+    </div>
 
-       <div id="circle"></div>
+    <div id="circle"></div>
 
-       <div class="cnt__nav">
-  <nav>
-    <ul>
-      <li><a href="instagram.html">#growit</a></li>
-      <li><a href="collection.html">Conscius Exclusive A/W 2020</a></li>
-      <li><a href="brandambassador.html">Brand ambassador</a></li>
-      <li><a href="events.html">Events</a></li>
-    </ul>
-  </nav>
-</div>
-<!-- NAV TRIGGER -->
+    <div class="cnt__nav">
+        <nav>
+            <ul>
+                <li><a href="instagram.html">#growit</a></li>
+                <li><a href="collection.html">Conscius Exclusive A/W 2020</a></li>
+                <li><a href="brandambassador.html">Brand ambassador</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+    </div>
 
-<div id="cnt__nav-trigger">
-  <div class="nav-trigger">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-</div>
+
+    <div id="cnt__nav-trigger">
+        <div class="nav-trigger">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
 
 
 
@@ -72,15 +72,16 @@
                         BRING COLOR BACK TO EARTH
                     </h1>
                 </div>
-<div class="side">
-        <div class="side_inner">
-            <div class="bottom">
-                <a href="https://www.facebook.com/hm/" target="_blank">+ FB</a>
-                <a href="https://www.instagram.com/hm/" target="_blank">IG</a>
-                <a href="https://www.hm.com/" target="_blank">WB</a>
-            </div>
-        </div>
-    </div>
+
+                <div class="side">
+                    <div class="side_inner">
+                        <div class="bottom">
+                            <a href="https://www.facebook.com/hm/" target="_blank">+ FB</a>
+                            <a href="https://www.instagram.com/hm/" target="_blank">IG</a>
+                            <a href="https://www.hm.com/" target="_blank">WB</a>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -250,7 +251,7 @@
             </div>
         </section>
 
-        <section id="section6" class="content-section py-5 pb-3 pb-lg-0">
+        <section id="section6" class="content-section py-5 pb-3 pb-lg-0" data-scrollcolor="#ffffff">
             <div class="container g-0">
                 <div class="row row-cols-lg-3  g-0 justify-content-center align-items-center flex-wrap-reverse">
                     <img class="img-fluid align-self-center content-img1 py-lg-5 col-6 col-lg-3" src="img/landing/sektion6/greenlady.jpg" alt="">
@@ -343,17 +344,17 @@
 
 
 
-<script>
-$('#cnt__nav-trigger, .cnt__nav').click(function() {
-  $('.nav-trigger').toggleClass('is-open');
-  $('.cnt__nav').toggleClass('is-open');
-});
-</script>
+    <script>
+        $('#cnt__nav-trigger, .cnt__nav').click(function() {
+            $('.nav-trigger').toggleClass('is-open');
+            $('.cnt__nav').toggleClass('is-open');
+        });
+    </script>
 
     <script>
         window.addEventListener("load", function() {
             const scrollColorElems = document.querySelectorAll("[data-scrollcolor]");
-            gsap.set("body", {
+            gsap.set("#section6", {
                 duration: 0.5,
                 autoAlpha: 1,
                 backgroundColor: "#FFFEF7"
@@ -366,13 +367,13 @@ $('#cnt__nav-trigger, .cnt__nav').click(function() {
                     start: "60% 100%",
                     end: "bottom 40%",
                     markers: "true",
-                    onEnter: () => gsap.to("body", {
+                    onEnter: () => gsap.to("#section7", {
                         duration: 1,
                         backgroundColor: colorSection.dataset.scrollcolor,
                         overwrite: 'auto',
                         autoAlpha: 1
                     }),
-                    onLeaveBack: () => gsap.to("body", {
+                    onLeaveBack: () => gsap.to("#section7", {
                         duration: 1,
                         backgroundColor: prevColor,
                         overwrite: 'auto',
@@ -744,21 +745,18 @@ $('#cnt__nav-trigger, .cnt__nav').click(function() {
         // xPercent: 0
         // }, 0);
         // });
-
     </script>
 
 
     <script>
-let circle = document.getElementById('circle');
-const onMouseMove = (e) => {
-    circle.style.left = e.pageX + 'px';
-    circle.style.top = e.pageY + 'px';
-}
+        let circle = document.getElementById('circle');
+        const onMouseMove = (e) => {
+            circle.style.left = e.pageX + 'px';
+            circle.style.top = e.pageY + 'px';
+        }
 
-document.addEventListener('mousemove', onMouseMove);
-</script>
+        document.addEventListener('mousemove', onMouseMove);
+    </script>
 
 
-</body>
-
-</html>
+</body></html>
