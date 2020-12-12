@@ -176,31 +176,7 @@ svg {
 
 
 
-@media screen and (min-width: 992px) {
-    .content-txt {
-        padding-left: 100px !important;
-    }
 
-    .content-img-sek-1 {
-        transform: scale(0.8) translateX(-120px) translateY(100px);
-    }
-
-    #section3 {
-        background-image: url(img/landing/sektion3/groenbakke.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-    }
-
-    #section5 {
-        background-image: url(img/landing/sektion5/heks2);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-    }
-}
 
 
 
@@ -215,6 +191,35 @@ footer {
     color: white;
 }
 
+footer a {
+    font-size: calc(0.8rem + 0.4vw);
+    font-family: manropeRegular;
+    color: white;
+}
+
+footer .some a:nth-child(1) {
+    margin-right: 10px !important;
+    font-weight: 900 !important;
+}
+
+footer .some a:nth-child(2) {
+    margin-right: 10px !important;
+    font-weight: 900 !important;
+}
+
+footer .some a:nth-child(3) {
+
+    font-weight: 900 !important;
+}
+
+.rights {
+    font-size: calc(0.5rem + 0.4vw);
+}
+
+footer p {
+    margin-bottom: 0 !important;
+}
+
 .form-control {
     border-radius: 0px;
     background-color: transparent;
@@ -226,6 +231,15 @@ footer {
     border: none;
     background-color: transparent;
 
+}
+
+.card-body {
+/*    max-width: 300px;*/
+
+}
+
+#section7 .container .row {
+/*    margin: 0 auto !important;*/
 }
 
 
@@ -289,3 +303,37 @@ footer {
 
 
 /* footer slut */
+
+
+@media screen and (min-width: 992px) {
+    .content-txt {
+        padding-left: 100px !important;
+    }
+
+    .content-img-sek-1 {
+        transform: scale(0.8) translateX(-120px) translateY(100px);
+    }
+
+    #section3 {
+        background-image: url(img/landing/sektion3/groenbakke.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    #section5 {
+        background-image: url(img/landing/sektion5/heks2);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+/*
+    .card-body {
+        max-width: 500px;
+
+    }
+*/
+}
