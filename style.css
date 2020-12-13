@@ -2,20 +2,368 @@ html {
     scroll-behavior: smooth;
 }
 
-/*CECILIE*/
+body {
+    overflow-x: hidden;
+    font-family: 'ManropeRegular';
+
+}
+
+main {
+    background-image: url(img/froe.jpg);
+    background-position: 50% 100%;
+    /*    background-repeat: no-repeat;*/
+    background-size: contain;
+}
+
+
+//*------------FONTE-------------*//
+
+@font-face {
+    font-family: manropeLight;
+    src: url(web_manrope/Manrope-Light.woff);
+}
+
+@font-face {
+    font-family: manropeBold;
+    src: url(web_manrope/Manrope-Bold.woff);
+}
+
+@font-face {
+    font-family: manropeRegular;
+    src: url(web_manrope/Manrope-Regular.woff);
+}
+
+@font-face {
+    font-family: manropeMedium;
+    src: url(web_manrope/Manrope-Medium.woff);
+}
+
+/*------------FONTE-SLUT-------------*/
+
+
+/*------------------QUOTES OVER SKÆRM-----------------*/
+
+.quote-translate1 {
+    z-index: 10;
+    white-space: nowrap;
+    padding: 300px 0 160px 0;
+}
+
+.quote-translate2,
+.quote-translate3,
+.quote-translate4 {
+    z-index: 10;
+    white-space: nowrap;
+    padding: 0px 0 0px 0;
+}
+
+.quote-translate1 h1 {
+    /*    font-size: 10rem;*/
+    font-size: calc(2.58rem + 10vw);
+    overflow: clip;
+    white-space: nowrap;
+    font-family: raleway;
+    font-weight: 600;
+    color: white;
+}
+
+.quote-translate2 h1,
+.quote-translate3 h1,
+.quote-translate4 h1 {
+    /*    font-size: 10rem;*/
+    font-size: calc(1.5rem + 6.5vw);
+    overflow: clip;
+    white-space: nowrap;
+    font-family: raleway;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+.splash .row,
+.quote2 .row,
+.quote3 .row,
+.quote4 .row {
+    overflow: hidden;
+}
+
+/*------------------QUOTES OVER SKÆRM SLUT-----------------*/
+
+
+/*------------------TEXT STYLE-----------------*/
+h2 {
+    font-family: raleway;
+    font-weight: 500;
+    font-size: calc(1rem + 1vw);
+    text-transform: uppercase;
+}
+
+h6 {
+    font-family: raleway;
+    line-height: 1.5rem;
+    font-size: calc(0.8rem + 0.3vw);
+}
+
+footer h3 {
+    font-family: raleway;
+    font-size: calc(1rem + 0.3vw);
+}
+
+h3 {
+    font-family: raleway;
+    font-size: calc(2rem + 2vw);
+    font-weight: 600;
+    line-height: calc(30px + 2vw);
+    padding: 200px 0 200px 0;
+    color: white;
+}
+
+h4 {
+    font-family: manropeMedium;
+    font-size: calc(1rem + 0.5vw);
+}
+
+footer h4 {
+    font-size: calc(0.8rem + 0.4vw);
+    font-family: manropeRegular;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: calc(0.8rem + 0.2vw);
+    font-weight: 300;
+}
+
+
+p {
+    font-size: calc(0.8rem + 0.3vw);
+    font-family: Raleway;
+    font-weight: 400;
+}
+
+a {
+    transition: 0.7s;
+    font-size: calc(0.8rem + 0.4vw);
+    font-family: raleway;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    line-height: 0;
+    text-transform: uppercase;
+}
+
+a:hover {
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: grey;
+}
+
+svg {
+    padding-bottom: 2px;
+}
+
+/*------------------TEXT STYLE SLUT-----------------*/
+
+/*------------------SEKTIONER-----------------*/
+
+#section2,
+#section4 {
+    padding-bottom: 110px !important;
+}
+
+#section3 {
+    background-image: url(img/landing/sektion3/groenbakke.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-position: center;
+}
+
+#section5 {
+    background-image: url(img/landing/sektion5/heks2);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-position: center;
+}
+
+.splash {
+    background-image: url(img/landing/splash/splash-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#section6 {}
+
+/*------------------SEKTIONER-SLUT-----------------*/
+
+/* footer */
+
+footer {
+    color: white;
+}
+
+footer a {
+    font-size: calc(0.8rem + 0.4vw);
+    font-family: manropeRegular;
+    color: white;
+}
+
+footer .some a:nth-child(1) {
+    margin-right: 10px !important;
+    font-weight: 600;
+
+}
+
+footer .some a:nth-child(2) {
+    margin-right: 10px !important;
+
+    font-weight: 600;
+}
+
+footer .some a:nth-child(3) {
+
+    font-weight: 600;
+}
+
+
+.rights {
+    font-size: calc(0.5rem + 0.4vw);
+}
+
+footer p {
+    margin-bottom: 0 !important;
+}
+
+.form-control {
+    border-radius: 0px;
+    background-color: transparent;
+    border: 1px solid white !important;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.card-body {
+    /*    max-width: 300px;*/
+}
+
+#section7 .container .row {
+    /*    margin: 0 auto !important;*/
+}
+
+.btn-primary {
+    background-color: transparent;
+    border: 1px solid white !important;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+    color: black;
+    background-color: transparent;
+    border-color: black;
+}
+
+.btn-primary:focus {
+    box-shadow: none;
+}
+
+.btn-primary:hover {
+    color: black;
+}
+
+.col-md-3 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+input {
+    font-family: 'manropeMedium';
+    color: white !important;
+}
+
+.input-group,
+textarea {
+    color: white !important;
+}
+
+.input-group input[type=name] {
+    color: white !important;
+}
+
+.btn:focus {
+    box-shadow: none;
+    border-color: black;
+    background-color: rgba (0, 0, 0, 0.10) !important;
+}
+
+.form-control {
+    border-radius: 0px;
+    background-color: transparent;
+    border: 0.5px solid black;
+}
+
+.btn:hover {
+    background-color: gainsboro;
+    border: 0.5px solid black;
+}
+
+.form-control:focus {
+    background-color: transparent;
+    box-shadow: none;
+    border-color: black;
+}
+
+/* footer slut */
+
+
+@media screen and (min-width: 992px) {
+    .content-txt {
+        padding-left: 100px !important;
+    }
+
+    .content-img-sek-1 {
+        transform: scale(0.8) translateX(-120px) translateY(100px);
+    }
+
+    #section3 {
+        background-image: url(img/landing/sektion3/groenbakke.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    #section5 {
+        background-image: url(img/landing/sektion5/heks2);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+}
+
+
+/* undersider */
 #brandambassador .col-6,
 #brandambassador .col-lg-3 {
     padding-right: 0 !important;
     padding-left: 0 !important;
 }
 
-/*
 #insta .content-txt,
 #events .content-txt,
 #collection .content-txt {
     padding-left: 0 !important;
 }
-*/
 
 #insta p,
 #events p,
@@ -30,7 +378,6 @@ html {
     height: 62px;
     top: 15px;
     left: 48%;
-
 }
 
 .cnt__nav img {
@@ -39,137 +386,7 @@ html {
 }
 
 
-
-/*
-.card1 {
-    pointer-events: none;
-    transform: translateZ(0);
-    padding: 30px;
-    border-radius: 5px;
-    width: 60px;
-    height: 62px;
-    margin: auto;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-    display: block;
-    position: relative;
-    background-color: transparent;
-}
-*/
-
-
-
-
-
-
-
-
-/*CECILIE-SLUT*/
-
-/* pop up */
-
-
-
-
-.modal-newsletter {
-    color: black;
-    width: 800px;
-    font-size: 14px;
-    margin: 50px auto;
-}
-
-.modal-newsletter .modal-content {
-    padding: 30px;
-    border-radius: 0;
-    border: none;
-    background: #EDEAE7;
-}
-
-.modal-newsletter .modal-header {
-    border-bottom: none;
-    position: relative;
-    border-radius: 0;
-}
-
-.modal-newsletter h4 {
-    color: #000;
-    font-size: 30px;
-    margin: 0;
-    font-weight: bold;
-}
-
-.modal-newsletter .close {
-    position: absolute;
-    top: -10px;
-    right: -75px;
-    text-shadow: none;
-    font-size: 24px;
-}
-
-.modal-newsletter .close:hover {
-    opacity: 0.8;
-}
-
-.modal-newsletter .form-control,
-.modal-newsletter .btn {
-    min-height: 45px;
-    border-radius: 0;
-}
-
-.modal-newsletter .form-control {
-    box-shadow: none;
-    border-color: black;
-    background-color: transparent;
-}
-
-.modal-newsletter .form-control:focus {
-    border-color: #D3CECB;
-
-}
-
-.modal-newsletter .btn {
-    color: #fff;
-    background: #D3CECB;
-    text-decoration: none;
-    transition: all 0.4s;
-    line-height: normal;
-    padding: 6px 20px;
-    min-width: 150px;
-    margin-left: 6px !important;
-    border: none;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-.modal-newsletter .btn:hover,
-.modal-newsletter .btn:focus {
-    background: #D2BFA9;
-    outline: none;
-}
-
-.modal-newsletter .input-group {
-    margin-top: 20px;
-}
-
-.modal-content {
-    align-items: center;
-    margin-top: 180px;
-}
-
-.btn-primary {
-    margin-left: 0px;
-}
-
-
-/* pop up slut*/
-
-
-
-
 /* animation pointer */
-
-
-
 
 .card1-content {
     margin: auto;
@@ -195,14 +412,6 @@ html {
     width: 100%;
 }
 
-
-
-
-.insta {
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-
 #insta .container-fluid {
     margin-right: 0 !important;
     margin-left: 0 !important;
@@ -222,8 +431,6 @@ html {
 }
 
 /* insta slut */
-/* insta slut */
-
 
 
 .hero2 {
@@ -243,8 +450,16 @@ html {
 }
 
 
-/* menu */
+@media screen and (max-width: 400px) {
 
+    .hero2,
+    .hero {
+        background-attachment: none;
+    }
+
+}
+
+/* menu */
 .clearfix:after {
     content: '';
     display: block;
@@ -372,6 +587,7 @@ html {
 
 .cnt__nav ul {
     padding: 0;
+    margin-top: -70px;
     -moz-transform: translateY(28vh);
     -ms-transform: translateY(28vh);
     -o-transform: translateY(28vh);
@@ -381,7 +597,7 @@ html {
 
 .cnt__nav li {
     list-style: none;
-    margin: 40px 0;
+    margin: 30px 0;
 }
 
 .nav-trigger-line {
@@ -452,7 +668,7 @@ html {
 #cnt__nav-trigger .nav-trigger div:nth-child(1) {
     position: absolute;
     width: 30px;
-    height: 3px;
+    height: 2px;
     left: 10px;
     display: block;
     background-color: #D90416;
@@ -467,7 +683,7 @@ html {
 #cnt__nav-trigger .nav-trigger div:nth-child(2) {
     position: absolute;
     width: 30px;
-    height: 3px;
+    height: 2px;
     left: 10px;
     display: block;
     background-color: #D90416;
@@ -482,7 +698,7 @@ html {
 #cnt__nav-trigger .nav-trigger div:nth-child(3) {
     position: absolute;
     width: 30px;
-    height: 3px;
+    height: 2px;
     left: 10px;
     display: block;
     background-color: #D90416;
@@ -497,7 +713,7 @@ html {
 #cnt__nav-trigger .nav-trigger div:nth-child(4) {
     position: absolute;
     width: 30px;
-    height: 3px;
+    height: 2px;
     left: 10px;
     display: block;
     background-color: #D90416;
@@ -508,9 +724,6 @@ html {
     transform: scale(1);
     -webkit-transform: scale(1);
 }
-
-
-
 
 #cnt__nav-trigger .nav-trigger.is-open div:nth-child(1) {
     -moz-transform: rotate(45deg);
@@ -571,15 +784,24 @@ html {
 
 }
 
+.place a {
+    color: white;
+    font-family: Raleway;
+    font-weight: 500;
+}
+
+
+
 #scroll-down {
     display: inline-block;
     position: relative;
     padding-top: 25px;
     text-align: center;
-    margin-top: -200px;
-    color: white;
+    font-family: Raleway;
+    color: white !important;
     font-weight: 500;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    z-index: 10;
 }
 
 .arrow-down {
@@ -678,7 +900,6 @@ a {
     pointer-events: none;
 }
 
-
 /* sidebar */
 
 .side {
@@ -692,7 +913,6 @@ a {
     letter-spacing: .0875rem;
     font-size: 1rem;
     font-weight: 500;
-
 }
 
 .side_inner {
@@ -721,12 +941,18 @@ a {
     word-spacing: 0;
     letter-spacing: 0.09rem;
     text-decoration: none;
+    font-weight: 500;
 }
 
+.side a:hover {
+    letter-spacing: 2px;
+    color: grey;
+    font-weight: 400;
+}
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
     .bottom {
-        bottom: 130px;
+        bottom: 90px;
         line-height: 33px;
     }
 
@@ -741,380 +967,105 @@ a {
 
 }
 
+/* form */
 
 
+.form label {
+  display: block;
+  position: relative;
+  margin: 40px 0px;
+}
+.form .label-txt {
+  position: absolute;
+  font-family: 'ManropeRegular';
+  font-size: .8em;
+  letter-spacing: 1px;
+  color: black;
+  transition: ease .3s;
+}
+.form .input {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
 
-a:hover {
-    text-decoration: none;
+.form .line-box {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background: black;
+}
+
+.line-box:hover {
     color: grey;
 }
 
-
-
-
-
-body {
-    overflow-x: hidden;
+.form .line {
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: grey;
+  transition: ease .6s;
 }
 
-main {
-    background-image: url(img/froe.jpg);
-    background-position: 50% 100%;
-    /*    background-repeat: no-repeat;*/
-    background-size: contain;
+.form .input {
+    color: black !important;
+    padding-left: 0px !important;
+     margin-left: 0px !important;
+    font-family: 'ManropeRegular';
 }
 
-.bi {}
-
-//*------------FONTE-------------*//
-
-@font-face {
-    font-family: manropeLight;
-    src: url(web_manrope/Manrope-Light.woff);
+.form .input:focus + .line-box .line {
+  width: 100%;
 }
 
-@font-face {
-    font-family: manropeBold;
-    src: url(web_manrope/Manrope-Bold.woff);
+.form .label-active {
+  top: -1em;
 }
 
-@font-face {
-    font-family: manropeRegular;
-    src: url(web_manrope/Manrope-Regular.woff);
-}
-
-@font-face {
-    font-family: manropeMedium;
-    src: url(web_manrope/Manrope-Medium.woff);
-}
-
-/*------------FONTE-SLUT-------------*/
-
-
-/*------------------QUOTES OVER SKÆRM-----------------*/
-
-.quote-translate1 {
-    z-index: 10;
-    white-space: nowrap;
-    padding: 300px 0 300px 0;
-}
-
-.quote-translate2,
-.quote-translate3,
-.quote-translate4 {
-    z-index: 10;
-    white-space: nowrap;
-    padding: 0px 0 0px 0;
-}
-
-.quote-translate1 h1 {
-    /*    font-size: 10rem;*/
-    font-size: calc(2.58rem + 10vw);
-    overflow: clip;
-    white-space: nowrap;
-    font-family: raleway;
-    font-weight: 600;
-    color: white;
-
-}
-
-
-.quote-translate2 h1,
-.quote-translate3 h1,
-.quote-translate4 h1 {
-    /*    font-size: 10rem;*/
-    font-size: calc(1.5rem + 6.5vw);
-    overflow: clip;
-    white-space: nowrap;
-    font-family: raleway;
-    font-weight: 300;
-    letter-spacing: 5px;
-}
-
-
-
-.splash .row,
-.quote2 .row,
-.quote3 .row,
-.quote4 .row {
-    overflow: hidden;
-}
-
-/*------------------QUOTES OVER SKÆRM SLUT-----------------*/
-
-
-/*------------------TEXT STYLE-----------------*/
-h2 {
-    font-family: raleway;
-    font-weight: 500;
-    font-size: calc(1rem + 1vw);
+.form button {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: transparent;
+    font-family: 'ManropeMedium';
+  color: black;
     text-transform: uppercase;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 0px;
+    font-size: 1rem;
+  cursor: pointer;
+  transition: ease .3s;
 }
 
-h6 {
-    font-family: raleway;
-    line-height: 1.5rem;
-    font-size: calc(0.8rem + 0.3vw);
+.form button:hover {
+  background-color: gainsboro;
+  color: white;
 }
 
-footer h3 {
-    font-family: raleway;
-    font-size: calc(1rem + 0.3vw);
+.form-check-input[type=checkbox] {
+   border-radius: 0;
 }
 
-h3 {
-    font-family: raleway;
-    font-size: calc(2rem + 2vw);
-    font-weight: 600;
-    line-height: calc(30px + 2vw);
-    padding: 200px 0 200px 0;
-    color: white;
+.form-check-input {
+    border: 1px solid black;
 }
 
-h4 {
-    font-family: manropeMedium;
-    font-size: calc(1rem + 0.5vw);
-}
-
-footer h4 {
-    font-size: calc(0.8rem + 0.4vw);
-    font-family: manropeMedium;
-    text-decoration: none;
-}
-
-footer p {
-    font-size: calc(0.8rem + 0.3vw);
-    font-weight: 300;
-}
-
-
-
-}
-
-p {
-    font-size: calc(0.8rem + 0.4vw);
-    font-family: manropeRegular;
-}
-
-a {
-    transition: 0.7s;
-    font-size: calc(0.8rem + 0.4vw);
-    font-family: raleway;
-    font-weight: 400;
-    text-decoration: none;
-    color: black;
-    line-height: 0;
-    text-transform: uppercase;
-}
-
-a:hover {
-    letter-spacing: 2px;
-}
-
-svg {
-    padding-bottom: 2px;
-}
-
-/*------------------TEXT STYLE SLUT-----------------*/
-
-/*------------------SEKTIONER-----------------*/
-
-#section2,
-#section4 {
-    padding-bottom: 110px !important;
-}
-
-#section3 {
-    background-image: url(img/landing/sektion3/groenbakke.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    background-position: center;
-}
-
-#section5 {
-    background-image: url(img/landing/sektion5/heks2);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    background-position: center;
-}
-
-.splash {
-    background-image: url(img/landing/splash/splash-2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#section6 {}
-
-/*------------------SEKTIONER-SLUT-----------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* footer */
-
-footer {
-    color: white;
-}
-
-footer a {
-    font-size: calc(0.8rem + 0.4vw);
-    font-family: manropeRegular;
-    color: white;
-}
-
-footer .some a:nth-child(1) {
-    margin-right: 10px !important;
-    font-weight: 900 !important;
-}
-
-footer .some a:nth-child(2) {
-    margin-right: 10px !important;
-    font-weight: 900 !important;
-}
-
-footer .some a:nth-child(3) {
-
-    font-weight: 900 !important;
-}
-
-.rights {
-    font-size: calc(0.5rem + 0.4vw);
-}
-
-footer p {
-    margin-bottom: 0 !important;
-}
-
-.form-control {
-    border-radius: 0px;
-    background-color: transparent;
-    border: 1px solid white !important;
-
-}
-
-.card {
-    border: none;
-    background-color: transparent;
-
-}
-
-.card-body {
-    /*    max-width: 300px;*/
-
-}
-
-#section7 .container .row {
-    /*    margin: 0 auto !important;*/
-}
-
-
-
-
-.btn-primary {
-    background-color: transparent;
-    border: 1px solid white !important;
-    text-transform: uppercase;
-
-    font-weight: 500;
-    color: gray;
-}
-
-.btn {
-    border-radius: 0px;
-}
-
-.btn-primary:not(:disabled):not(.disabled):active {
-    color: black;
-    background-color: transparent;
-    border-color: black;
-
-}
-
-.btn-primary:focus {
-    box-shadow: none;
-}
-
-.col-md-3 {
-    padding-right: 0px;
-    padding-left: 0px;
-}
-
-
-
-.btn:focus {
-    box-shadow: none;
-    border-color: black;
-    background-color: white !important;
-}
-
-.form-control {
-    border-radius: 0px;
-    background-color: transparent;
-    border: 0.5px solid black;
-
-}
-
-.btn:hover {
-    background: grey;
-    border: 0.5px solid black;
-
-}
-
-.form-control:focus {
-    background-color: transparent;
+.form-check-input:focus {
     box-shadow: none;
     border-color: black;
 }
 
-
-/* footer slut */
-
-
-@media screen and (min-width: 992px) {
-    .content-txt {
-        padding-left: 100px !important;
-    }
-
-    .content-img-sek-1 {
-        transform: scale(0.8) translateX(-120px) translateY(100px);
-    }
-
-    #section3 {
-        background-image: url(img/landing/sektion3/groenbakke.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-    }
-
-    #section5 {
-        background-image: url(img/landing/sektion5/heks2);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-    }
-
-    /*
-    .card-body {
-        max-width: 500px;
-
-    }
-*/
+.form-check-input:checked {
+    background-color: #242424;
+    border-color: #242424;
 }
+
+/* form slut */
+
+
