@@ -269,6 +269,41 @@ svg {
     background-repeat: no-repeat;
 }
 
+#brand-splash .splash {
+    background-image: url(img/landing/brand/brandambsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#copenhagen-splash .splash {
+    background-image: url(img/landing/copen/copensplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#collection-splash .splash {
+    background-image: url(img/landing/about/aboutsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#events-splash .splash {
+    background-image: url(img/landing/event/eventsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#insta-splash .splash {
+    background-image: url(img/landing/feed/instasplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 #section6 {}
 
 /*------------------SEKTIONER-SLUT-----------------*/
@@ -1257,7 +1292,7 @@ a {
 
 
 .cookiealert {
-        background: #292727 !important;
+    background: #292727 !important;
     font-size: 0.9rem;
 }
 
