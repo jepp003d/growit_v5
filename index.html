@@ -334,7 +334,35 @@ align-items-end justify-content-center flex-wrap-reverse my-4 px-3">
         </footer>
     </section>
 
+<div id="myModal" class="modal fade">
+                        <div class="modal-dialog modal-newsletter">
+                            <div class="modal-content">
+                                <form action="/examples/actions/confirmation.php" method="post">
+                                    <div class="modal-header">
+                                        <h4>Join planting event</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span>&times;</span></button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <p>Lorem ipsum</p>
 
+                                        <div class="input-group">
+                                            <input type="name" class="form-control" placeholder="NAME" required>
+                                        </div>
+
+                                        <div class="input-group">
+                                            <input type="email" class="form-control" placeholder="EMAIL" required>
+                                        </div>
+
+                                        <div class="input-group">
+                                            <span class="input-group-btn text-uppercase">
+                                                <input type="submit" class="btn btn-primary" value="Participate">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
 
 
 
@@ -356,11 +384,17 @@ align-items-end justify-content-center flex-wrap-reverse my-4 px-3">
             $('.nav-trigger').toggleClass('is-open');
             $('.cnt__nav').toggleClass('is-open');
         });
-
-        $('#myModal').on('shown.bs.modal', function() {
-            $('#myInput').trigger('focus')
-        });
     </script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            $("#myModal").modal('show');
+        });
+
+    </script>
+
 
     <script>
         var card = $(".card1");

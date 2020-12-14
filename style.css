@@ -1074,3 +1074,87 @@ a {
 }
 
 /* form slut */
+
+
+
+
+
+
+/* pop up */
+
+.modal-newsletter {
+		color: black;
+		width: 800px;
+		font-size: 14px;
+		margin: 50px auto;
+	}
+	.modal-newsletter .modal-content {
+		padding: 30px;
+		border-radius: 0;
+		border: none;
+        background: #EDEAE7;
+	}
+	.modal-newsletter .modal-header {
+		border-bottom: none;
+        position: relative;
+		border-radius: 0;
+	}
+	.modal-newsletter h4 {
+		color: #000;
+		font-size: 30px;
+		margin: 0;
+		font-weight: bold;
+	}
+	.modal-newsletter .close {
+		position: absolute;
+		top: -10px;
+		    right: -75px;
+		text-shadow: none;
+		font-size: 24px;
+	}
+	.modal-newsletter .close:hover {
+		opacity: 0.8;
+	}
+
+	.modal-newsletter .form-control, .modal-newsletter .btn {
+		min-height: 45px;
+		border-radius: 0;
+	}
+	.modal-newsletter .form-control {
+		box-shadow: none;
+		border-color: black;
+            background-color: transparent;
+	}
+	.modal-newsletter .form-control:focus {
+		border-color: #D3CECB;
+
+	}
+    .modal-newsletter .btn {
+        color: #fff;
+		background: #D3CECB;
+		text-decoration: none;
+		transition: all 0.4s;
+        line-height: normal;
+		padding: 6px 20px;
+		min-width: 150px;
+		margin-left: 6px !important;
+        border: none;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+	.modal-newsletter .btn:hover, .modal-newsletter .btn:focus {
+		background: #D2BFA9;
+		outline: none;
+	}
+	.modal-newsletter .input-group {
+        margin-top: 20px;
+	}
+
+.modal-content {
+    align-items: center;
+    margin-top: 180px;
+}
+
+.btn-primary {
+    margin-left: 0px;
+}
