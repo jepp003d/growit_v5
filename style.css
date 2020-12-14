@@ -6,13 +6,39 @@ body {
     overflow-x: hidden;
     font-family: 'ManropeRegular';
 
+
 }
+
+/*
+element.style {
+    background-color: none;
+    opacity: 1;
+    visibility: inherit;
+}
+*/
 
 main {
     background-image: url(img/froe.jpg);
     background-position: 50% 100%;
     /*    background-repeat: no-repeat;*/
     background-size: contain;
+}
+
+.logo-wrapper {
+    position: relative;
+    left: 20px;
+    top: 25px;
+}
+
+.logo {
+    position: fixed;
+    /*
+    width: 10vw;
+    height: 2vw;
+*/
+    width: calc(100px + 2vw);
+    height: calc(17px + 2vw);
+    z-index: 100;
 }
 
 
@@ -187,7 +213,7 @@ svg {
 }
 
 .splash {
-    background-image: url(img/landing/splash/splash-2.jpg);
+    background-image: url(img/landing/splash/ny_splash.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -327,7 +353,11 @@ textarea {
 }
 
 /* footer slut */
-
+@media screen and (min-width: 2000px) {
+    body {
+        margin: 0 20vw 0 20vw;
+    }
+}
 
 @media screen and (min-width: 992px) {
     .content-txt {
@@ -657,6 +687,7 @@ textarea {
 
 #cnt__nav-trigger .nav-trigger {
     position: relative;
+
 }
 
 #cnt__nav-trigger .nav-trigger div {
@@ -668,6 +699,7 @@ textarea {
     -webkit-transition-duration: 0.4s;
     -webkit-transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     -webkit-transition-delay: 0;
+
 }
 
 #cnt__nav-trigger .nav-trigger div:nth-child(1) {
@@ -676,14 +708,21 @@ textarea {
     height: 2px;
     left: 10px;
     display: block;
-    background-color: #D90416;
+    background-color: black;
     top: 20px;
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
+
 }
+
+/*
+#cnt__nav-trigger {
+    background-color: black !important;
+}
+*/
 
 #cnt__nav-trigger .nav-trigger div:nth-child(2) {
     position: absolute;
@@ -691,13 +730,14 @@ textarea {
     height: 2px;
     left: 10px;
     display: block;
-    background-color: #D90416;
+    background-color: black;
     top: 20px;
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
+
 }
 
 #cnt__nav-trigger .nav-trigger div:nth-child(3) {
@@ -706,13 +746,14 @@ textarea {
     height: 2px;
     left: 10px;
     display: block;
-    background-color: #D90416;
+    background-color: black;
     top: 13px;
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1);
     -webkit-transform: scale(1);
+
 }
 
 #cnt__nav-trigger .nav-trigger div:nth-child(4) {
@@ -721,13 +762,14 @@ textarea {
     height: 2px;
     left: 10px;
     display: block;
-    background-color: #D90416;
+    background-color: black;
     top: 27px;
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1);
     -webkit-transform: scale(1);
+
 }
 
 #cnt__nav-trigger .nav-trigger.is-open div:nth-child(1) {
