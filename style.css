@@ -352,6 +352,88 @@ textarea {
     background-color: gainsboro !important;
 }
 
+/* white form */
+
+.whiteform label {
+    display: block;
+    position: relative;
+    margin: 40px 0px;
+}
+
+.whiteform .label-txt {
+    position: absolute;
+    font-family: 'ManropeRegular';
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: white;
+    transition: ease .3s;
+}
+
+.whiteform .input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.whiteform .line-box {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background: white;
+}
+
+.whiteline-box:hover {
+    color: grey;
+}
+
+.whiteform .line {
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: grey;
+    transition: ease .6s;
+}
+
+.whiteform .input {
+    color: white !important;
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+    font-family: 'ManropeRegular';
+}
+
+.whiteform .input:focus + .line-box .line {
+    width: 100%;
+}
+
+.whiteform .label-active {
+    top: -1em;
+}
+
+.whiteform button {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: transparent;
+    font-family: 'ManropeMedium';
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 0px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: ease .3s;
+}
+
+.whiteform button:hover {
+    background-color: gainsboro;
+    color: black;
+}
+
 /* footer slut */
 @media screen and (min-width: 2000px) {
     body {
@@ -1067,6 +1149,7 @@ a {
     padding-left: 0px !important;
     margin-left: 0px !important;
     font-family: 'ManropeRegular';
+        font-size: 0.9rem;
 }
 
 .form .input:focus + .line-box .line {
@@ -1094,7 +1177,7 @@ a {
 
 .form button:hover {
     background-color: gainsboro;
-    color: white;
+    color: black;
 }
 
 .form-check-input[type=checkbox] {
@@ -1174,7 +1257,7 @@ a {
 }
 
 .modal-newsletter .form-control,
-.modal-newsletter .btn {
+ {
     min-height: 45px;
     border-radius: 0;
 }
@@ -1190,25 +1273,7 @@ a {
 
 }
 
-.modal-newsletter .btn {
-    color: #fff;
-    background: #D3CECB;
-    text-decoration: none;
-    transition: all 0.4s;
-    line-height: normal;
-    padding: 6px 20px;
-    min-width: 150px;
-    margin-left: 6px !important;
-    border: none;
-    text-transform: uppercase;
-    font-weight: 500;
-}
 
-.modal-newsletter .btn:hover,
-.modal-newsletter .btn:focus {
-    background: #D2BFA9;
-    outline: none;
-}
 
 .modal-newsletter .input-group {
     margin-top: 20px;
