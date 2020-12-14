@@ -322,6 +322,10 @@ textarea {
     border-color: black;
 }
 
+.btn-primary:focus {
+    background-color: gainsboro !important;
+}
+
 /* footer slut */
 
 
