@@ -242,6 +242,7 @@
     </section>
 
 
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -255,6 +256,22 @@
         $('#cnt__nav-trigger, .cnt__nav').click(function() {
             $('.nav-trigger').toggleClass('is-open');
             $('.cnt__nav').toggleClass('is-open');
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('.input').focus(function() {
+                $(this).parent().find(".label-txt").addClass('label-active');
+            });
+
+            $(".input").focusout(function() {
+                if ($(this).val() == '') {
+                    $(this).parent().find(".label-txt").removeClass('label-active');
+                };
+            });
+
         });
     </script>
 
