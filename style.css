@@ -704,7 +704,7 @@ textarea {
 
 #cnt__nav-trigger .nav-trigger div:nth-child(1) {
     position: absolute;
-    width: 30px;
+    width: 26px;
     height: 2px;
     left: 10px;
     display: block;
@@ -726,7 +726,7 @@ textarea {
 
 #cnt__nav-trigger .nav-trigger div:nth-child(2) {
     position: absolute;
-    width: 30px;
+    width: 26px;
     height: 2px;
     left: 10px;
     display: block;
@@ -742,7 +742,7 @@ textarea {
 
 #cnt__nav-trigger .nav-trigger div:nth-child(3) {
     position: absolute;
-    width: 30px;
+    width: 26px;
     height: 2px;
     left: 10px;
     display: block;
@@ -758,7 +758,7 @@ textarea {
 
 #cnt__nav-trigger .nav-trigger div:nth-child(4) {
     position: absolute;
-    width: 30px;
+    width: 26px;
     height: 2px;
     left: 10px;
     display: block;
@@ -1124,6 +1124,10 @@ a {
 
 /* pop up */
 
+.modal-body {
+    padding: 2rem;
+}
+
 .modal-newsletter {
     color: black;
 
@@ -1135,7 +1139,7 @@ a {
     padding: 15px;
     border-radius: 0;
     border: none;
-    background: #EDEAE7;
+    background: white;
 }
 
 .modal-newsletter .modal-header {
@@ -1153,14 +1157,20 @@ a {
 
 .modal-newsletter .close {
     position: absolute;
-    top: -10px;
-    right: -10px;
+    top: 1px;
+    right: 15px;
     text-shadow: none;
-    font-size: 24px;
+    font-size: 28px;
+    border: none;
+    background: transparent;
 }
 
-.modal-newsletter .close:hover {
-    opacity: 0.8;
+
+.modal-newsletter .close:hover,
+.modal-newsletter .close:focus {
+  color: gainsboro;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .modal-newsletter .form-control,
@@ -1212,4 +1222,15 @@ a {
 
 .btn-primary {
     margin-left: 0px;
+}
+
+
+.cookiealert {
+    background-color: #292727 !important;
+        font-size: 0.9rem;
+}
+
+.cookiealert a {
+    color: white;
+    text-decoration: none;
 }
