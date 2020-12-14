@@ -5,9 +5,33 @@ html {
 body {
     overflow-x: hidden;
     font-family: 'ManropeRegular';
-
-
 }
+
+
+.df {
+    display: flex
+}
+
+.aic {
+    align-items: center
+}
+
+.jcc {
+    justify-content: center
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    color: white;
+    z-index: 100;
+}
+
+
 
 #sektion1 a {
     overflow: hidden;
