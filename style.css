@@ -7,6 +7,27 @@ body {
     font-family: 'ManropeRegular';
 }
 
+#brandambassador {
+    background-image: url(img/froe.jpg);
+    background-position: 100% 100%;
+    /*    background-repeat: no-repeat;*/
+    background-size: cover;
+}
+
+#copenhagen {
+    background-image: url(img/froe.jpg);
+    background-position: 100% 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#events {
+    background-image: url(img/froe.jpg);
+    background-position: 50% 43%;
+    /*    background-repeat: no-repeat;*/
+    background-size: contain;
+}
+
 
 .df {
     display: flex
@@ -1325,6 +1346,27 @@ a {
 @media screen and (min-width: 992px) {
     main {
         background-repeat: no-repeat;
+    }
+
+    #brandambassador {
+        background-image: url(img/froe.jpg);
+        background-position: 100% 5%;
+        /*    background-repeat: no-repeat;*/
+        background-size: cover;
+    }
+
+    #copenhagen {
+        background-image: url(img/froe.jpg);
+        background-position: 100% 5%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #events {
+        background-image: url(img/froe.jpg);
+        background-position: 50% 5%;
+        /*    background-repeat: no-repeat;*/
+        background-size: cover;
     }
 
     .hero2 {
