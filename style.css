@@ -645,7 +645,7 @@ textarea {
     background-size: cover;
 
     background-position: 50% 100%;
-    background-image: url(img/waste.jpg);
+    background-image: url(img/landing/about/hmgoepprod.jpeg);
     height: 100vh;
 }
 
@@ -1409,7 +1409,7 @@ a {
         background-size: cover;
         background-attachment: fixed;
         background-position: 50% 100%;
-        background-image: url(img/waste.jpg);
+        background-image: url(img/landing/about/hmgoepprod.jpeg);
         height: 100vh;
     }
 
