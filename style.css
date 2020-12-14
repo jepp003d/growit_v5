@@ -333,6 +333,7 @@ footer p {
 
 .btn-primary:hover {
     color: black;
+    background-color: gainsboro;
 }
 
 .col-md-3 {
@@ -510,7 +511,8 @@ textarea {
 
 #insta .content-txt,
 #events .content-txt,
-#collection .content-txt {
+#collection .content-txt,
+#policy .content-txt {
     padding-left: 0 !important;
 }
 
@@ -1234,8 +1236,7 @@ a {
 
 
 .cookiealert {
-    background-color: #292727 !important;
-    background: none !important;
+        background: #292727 !important;
     font-size: 0.9rem;
 }
 
