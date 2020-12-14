@@ -556,7 +556,7 @@ textarea {
 
 .hero2 {
     background-size: cover;
-    background-attachment: fixed;
+
     background-position: 50% 100%;
     background-image: url(img/waste.jpg);
     height: 100vh;
@@ -564,21 +564,12 @@ textarea {
 
 .hero {
     background-size: cover;
-    background-attachment: fixed;
+
     background-position: 50% 100%;
     background-image: url(img/waste.jpg);
     height: 100vh;
 }
 
-
-@media screen and (max-width: 400px) {
-
-    .hero2,
-    .hero {
-        background-attachment: none;
-    }
-
-}
 
 /* menu */
 .clearfix:after {
@@ -1016,89 +1007,6 @@ a {
 }
 
 
-@media screen and (max-width: 400px) {
-    #circle {
-        visibility: hidden;
-    }
-
-}
-
-#circle {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;
-    border: 3px solid black;
-    pointer-events: none;
-}
-
-/* sidebar */
-
-.side {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    border-right: 1px dashed rgba(black, .3);
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: .0875rem;
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.side_inner {
-    position: relative;
-    height: 100%;
-    padding: 30px;
-    white-space: nowrap;
-}
-
-.bottom {
-    top: auto;
-    bottom: 100px;
-    position: absolute;
-    left: 0;
-    transform: rotate(-90deg) perspective(1px);
-    transform-origin: 50px 50px;
-    height: 40px;
-    white-space: nowrap;
-    word-spacing: .5rem;
-    color: white;
-    z-index: 10;
-}
-
-.side a {
-    color: white;
-    word-spacing: 0;
-    letter-spacing: 0.09rem;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.side a:hover {
-    letter-spacing: 2px;
-    color: grey;
-    font-weight: 400;
-}
-
-@media screen and (min-width: 768px) {
-    .bottom {
-        bottom: 90px;
-        line-height: 33px;
-    }
-
-}
-
-/* sidebar slut */
-
-@media screen and (min-width: 992px) {
-    main {
-        background-repeat: no-repeat;
-    }
-
-}
 
 /* form */
 
@@ -1153,7 +1061,7 @@ a {
     padding-left: 0px !important;
     margin-left: 0px !important;
     font-family: 'ManropeRegular';
-        font-size: 0.9rem;
+    font-size: 0.9rem;
 }
 
 .form .input:focus + .line-box .line {
@@ -1255,13 +1163,13 @@ a {
 
 .modal-newsletter .close:hover,
 .modal-newsletter .close:focus {
-  color: gainsboro;
-  text-decoration: none;
-  cursor: pointer;
+    color: gainsboro;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .modal-newsletter .form-control,
- {
+    {
     min-height: 45px;
     border-radius: 0;
 }
@@ -1296,10 +1204,111 @@ a {
 
 .cookiealert {
     background-color: #292727 !important;
-        font-size: 0.9rem;
+    font-size: 0.9rem;
 }
 
 .cookiealert a {
     color: white;
     text-decoration: none;
+}
+
+
+@media screen and (max-width: 400px) {
+    #circle {
+        visibility: hidden;
+    }
+
+}
+
+#circle {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    border: 3px solid black;
+    pointer-events: none;
+}
+
+/* sidebar */
+
+.side {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    border-right: 1px dashed rgba(black, .3);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .0875rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.side_inner {
+    position: relative;
+    height: 100%;
+    padding: 30px;
+    white-space: nowrap;
+}
+
+.bottom {
+    top: auto;
+    bottom: 100px;
+    position: absolute;
+    left: 0;
+    transform: rotate(-90deg) perspective(1px);
+    transform-origin: 50px 50px;
+    height: 40px;
+    white-space: nowrap;
+    word-spacing: .5rem;
+    color: white;
+    z-index: 10;
+}
+
+.side a {
+    color: white;
+    word-spacing: 0;
+    letter-spacing: 0.09rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.side a:hover {
+    letter-spacing: 2px;
+    color: grey;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+    .bottom {
+        bottom: 90px;
+        line-height: 33px;
+    }
+
+}
+
+/* sidebar slut */
+
+@media screen and (min-width: 992px) {
+    main {
+        background-repeat: no-repeat;
+    }
+
+    .hero2 {
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 50% 100%;
+        background-image: url(img/waste.jpg);
+        height: 100vh;
+    }
+
+    .hero {
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 50% 100%;
+        background-image: url(img/waste.jpg);
+        height: 100vh;
+    }
+
 }
