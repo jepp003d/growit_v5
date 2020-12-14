@@ -9,13 +9,18 @@ body {
 
 }
 
-/*
-element.style {
-    background-color: none;
-    opacity: 1;
-    visibility: inherit;
+#sektion1 a {
+    overflow: hidden;
 }
-*/
+
+#events img {
+    transition: 0.5s;
+}
+
+#events img:hover {
+    filter: brightness(80%);
+    transform: scale(1.2);
+}
 
 main {
     background-image: url(img/froe.jpg);
@@ -280,7 +285,7 @@ footer p {
     /*    margin: 0 auto !important;*/
 }
 
-/*.btn-primary {
+.btn-primary {
     background-color: transparent;
     border: 1px solid white !important;
     text-transform: uppercase;
@@ -304,7 +309,7 @@ footer p {
 
 .btn-primary:hover {
     color: black;
-}*/
+}
 
 .col-md-3 {
     padding-right: 0px;
@@ -785,7 +790,7 @@ textarea {
     height: 2px;
     left: 10px;
     display: block;
-    background-color: black;
+    background-color: white;
     top: 20px;
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
@@ -855,6 +860,7 @@ textarea {
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+
 }
 
 #cnt__nav-trigger .nav-trigger.is-open div:nth-child(2) {
@@ -863,6 +869,7 @@ textarea {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
+    background-color: white;
 }
 
 #cnt__nav-trigger .nav-trigger.is-open div:nth-child(3) {
@@ -1204,6 +1211,7 @@ a {
 
 .cookiealert {
     background-color: #292727 !important;
+    background: none !important;
     font-size: 0.9rem;
 }
 
