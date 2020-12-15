@@ -472,7 +472,6 @@ textarea {
 .whiteform .label-txt {
     position: absolute;
     font-family: 'ManropeRegular';
-    font-size: 0.9rem;
     letter-spacing: 1px;
     color: white;
     transition: ease .3s;
@@ -513,6 +512,7 @@ textarea {
     padding-left: 0px !important;
     margin-left: 0px !important;
     font-family: 'ManropeRegular';
+    font-size: 0.9rem;
 }
 
 .whiteform .input:focus + .line-box .line {
@@ -533,7 +533,7 @@ textarea {
     border: 1px solid white;
     outline: none;
     border-radius: 0px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     cursor: pointer;
     transition: ease .3s;
 }
