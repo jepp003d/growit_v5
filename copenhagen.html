@@ -31,7 +31,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="collection.html">Conscious Exclusive A/W 2020</a></li>
                 <li><a href="brandambassador.html">Become brand ambassador</a></li>
-                <li><a href="events.html">Upcomming events</a></li>
+                <li><a href="events.html">Upcoming events</a></li>
                 <li><a href="instagram.html">#Feed</a></li>
             </ul>
         </nav>
@@ -49,7 +49,7 @@
 
     <div id="copenhagen-splash">
 
-        <section class="splash hue3" data-scrollcolor="#ffffff">
+        <section class="splash hue3 d-none" data-scrollcolor="#292727">
 
             <div class="container-fluid position-relative">
                 <div class="row align-items-center">
@@ -95,7 +95,7 @@
                         <img class="img-fluid align-self-center content-img1 py-lg-5 col-6 col-lg-3" src="img/landing/sektion4/hmgoepprod.jpg" alt="">
                         <img class="img-fluid align-self-center content-img2 col-6 col-lg-3 hue1" src="img/landing/sektion4/web6_backg.jpg" alt="">
                         <div class="content-txt col-lg-6 px-lg-0">
-                            <h2 class="pt-2 pt-lg-0">Join the event</h2>
+                            <h2 class="pt-5 pt-lg-0">Join the event</h2>
                             <p class="">We’ve made it easy for you to team up, meet like-minded people and go about your business planting the #growit seeds. It’s quite frankly quite simple. Meet up, say hello to your new friends, go for a long walk and sow the seeds along the way. We hope you have a good time!</p>
                             <div class="form mb-5">
                                 <form>
@@ -252,11 +252,11 @@
             gsap.set("#section6", {
                 duration: 0.5,
                 autoAlpha: 1,
-                backgroundColor: "#FFFEF7"
+                backgroundColor: "#292727"
             });
 
             scrollColorElems.forEach((colorSection, i) => {
-                const prevColor = i === 0 ? "#FFFEF7" : scrollColorElems[i - 1].dataset.scrollcolor;
+                const prevColor = i === 0 ? "#292727" : scrollColorElems[i - 1].dataset.scrollcolor;
                 ScrollTrigger.create({
                     trigger: colorSection,
                     start: "60% 100%",

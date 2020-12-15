@@ -29,6 +29,21 @@ body {
 }
 
 
+
+#sektion1 img {
+    opacity: 0;
+
+}
+
+#sektion1 .border {
+    border: 1px solid black !important;
+}
+
+#sektion1 .opacity {
+    opacity: 1;
+}
+
+
 .df {
     display: flex
 }
@@ -214,6 +229,7 @@ p {
     font-size: calc(0.8rem + 0.3vw);
     font-family: Raleway;
     font-weight: 400;
+    margin-bottom: 0 !important;
 }
 
 a {
@@ -277,7 +293,7 @@ svg {
 }
 
 #copenhagen-splash .splash {
-    background-image: url(img/landing/copen/copensplash.jpg);
+    background-image: none;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
