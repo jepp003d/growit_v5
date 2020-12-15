@@ -521,8 +521,6 @@
                 //SATURATION
 
 
-
-
                 //SATURATION
                 gsap.fromTo(".quote-translate1", {
                     x: 10
@@ -602,6 +600,10 @@
             },
             // iPad Pro
             "(max-width: 1199px)": function() {
+
+
+
+
                 gsap.fromTo(".quote-translate1", {
                     x: 10
                 }, {
@@ -643,7 +645,7 @@
                 gsap.fromTo(".quote-translate3", {
                     x: 10
                 }, {
-                    x: -420,
+                    x: -500,
 
                     duration: 1,
 
@@ -652,8 +654,8 @@
                         ease: "power2.inOut",
 
 
-                        start: "top 50%",
-                        end: "bottom top",
+                        start: "60% 50%",
+                        end: "bottom 20%",
                         scrub: true,
 
                     }
@@ -671,12 +673,15 @@
                         ease: "power2.inOut",
 
 
-                        start: "top 90%",
-                        end: "bottom top",
+                        start: "60% 50%",
+                        end: "bottom 30%",
                         scrub: true,
 
                     }
                 });
+
+
+
 
                 // The ScrollTriggers created inside these functions are segregated and get
                 // reverted/killed when the media query doesn't match anymore.
@@ -684,6 +689,10 @@
 
             // mobile
             "(max-width: 1023px)": function() {
+
+
+
+
                 gsap.fromTo(".quote-translate1", {
                     x: 10
                 }, {
@@ -733,7 +742,7 @@
                         ease: "power2.inOut",
 
 
-                        start: "top 90%",
+                        start: "60% 90%",
                         end: "bottom top",
                         scrub: true,
 
@@ -743,7 +752,7 @@
                 gsap.fromTo(".quote-translate4", {
                     x: 10
                 }, {
-                    x: -600,
+                    x: -500,
 
                     duration: 1,
 
@@ -752,12 +761,13 @@
                         ease: "power2.inOut",
 
 
-                        start: "top 90%",
+                        start: "60% 90%",
                         end: "bottom top",
                         scrub: true,
 
                     }
                 });
+
 
                 // The ScrollTriggers created inside these functions are segregated and get
                 // reverted/killed when the media query doesn't match anymore.
@@ -838,7 +848,7 @@
                 trigger: "#section5",
                 start: "top 50%",
                 end: "80% 50%",
-                markers: true,
+
                 scrub: true
             },
         });
@@ -848,12 +858,16 @@
             duration: 0.3,
             scrollTrigger: {
                 trigger: "#section1",
-                start: "top 50%",
+                start: "center 50%",
                 end: "80% 50%",
                 markers: true,
                 scrub: true
             },
         });
+
+
+
+
 
         //        gsap.utils.toArray(".comparisonSection").forEach(section => {
         // let tl = gsap.timeline({

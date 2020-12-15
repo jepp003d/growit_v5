@@ -30,6 +30,8 @@ body {
 
 
 
+
+
 #sektion1 img {
     opacity: 0;
 
@@ -229,7 +231,7 @@ p {
     font-size: calc(0.8rem + 0.3vw);
     font-family: Raleway;
     font-weight: 400;
-    margin-bottom: 0 !important;
+
 }
 
 a {
@@ -1398,6 +1400,13 @@ a {
 @media screen and (min-width: 992px) {
     main {
         background-repeat: no-repeat;
+    }
+
+    p {
+        font-size: calc(0.8rem + 0.3vw);
+        font-family: Raleway;
+        font-weight: 400;
+        margin-bottom: 0 !important;
     }
 
     #brandambassador {
