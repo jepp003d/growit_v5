@@ -139,7 +139,7 @@ main {
 .quote-translate1 {
     z-index: 10;
     white-space: nowrap;
-    padding: 300px 0 160px 0;
+    padding: 300px 0 140px 0;
 }
 
 .quote-translate2,
@@ -300,6 +300,7 @@ svg {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 
 #collection-splash .splash {
     background-image: url(img/landing/about/aboutsplash.jpg);
@@ -471,7 +472,6 @@ textarea {
 .whiteform .label-txt {
     position: absolute;
     font-family: 'ManropeRegular';
-    font-size: 0.9rem;
     letter-spacing: 1px;
     color: white;
     transition: ease .3s;
@@ -512,6 +512,7 @@ textarea {
     padding-left: 0px !important;
     margin-left: 0px !important;
     font-family: 'ManropeRegular';
+    font-size: 0.9rem;
 }
 
 .whiteform .input:focus + .line-box .line {
@@ -532,7 +533,7 @@ textarea {
     border: 1px solid white;
     outline: none;
     border-radius: 0px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     cursor: pointer;
     transition: ease .3s;
 }
@@ -1215,6 +1216,11 @@ a {
 .form-check-input:checked {
     background-color: #242424;
     border-color: #242424;
+}
+
+
+.form-check-label {
+    font-size: 0.8rem;
 }
 
 /* form slut */
