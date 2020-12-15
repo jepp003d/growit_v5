@@ -288,7 +288,7 @@ svg {
 }
 
 #brand-splash .splash {
-    background-image: url(img/landing/brand/brandambsplash.jpg);
+    background-image: url(img/landing/brand/brand2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -309,7 +309,7 @@ svg {
 }
 
 #events-splash .splash {
-    background-image: url(img/landing/event/eventsplash.jpg);
+    background-image: url(img/landing/event/gr%C3%B8nsplash.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -663,7 +663,7 @@ textarea {
     background-size: cover;
 
     background-position: 50% 100%;
-    background-image: url(img/landing/about/hmgoepprod.jpeg);
+    background-image: url(img/landing/about/farve.jpg);
     height: 100vh;
 }
 
