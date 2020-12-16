@@ -7,6 +7,10 @@ html {
     font-size: calc(0.8rem + 0.2vw) !important;
 }
 
+#section0 .content-txt p {
+    font-size: calc(1.1rem + 0.2vw) !important;
+}
+
 
 body {
     overflow-x: hidden;
