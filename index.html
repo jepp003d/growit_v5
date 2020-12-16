@@ -165,7 +165,7 @@
 
                             We want you on the journey with us. It’s very simple. Plant it, picture it, tag it, repeat. Fulfill missions and earn rewards. <br> <br>
 
-                            Thank you for changing us. <br> <br> <a href="https://about.hm.com/content/dam/hmgroup/groupsite/documents/masterlanguage/CSR/reports/2018_Sustainability_report/HM_Group_SustainabilityReport_2018_%20FullReport.pdf" target="_blank">Sustainability report <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            Thank you for changing us. <br> <br> <a href="https://about.hm.com/content/dam/hmgroup/groupsite/documents/masterlanguage/CSR/reports/2018_Sustainability_report/HM_Group_SustainabilityReport_2018_%20FullReport.pdf" target="_blank">Get inspired <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                                 </svg></a>
                         </p>
@@ -403,6 +403,7 @@
             $('.nav-trigger').toggleClass('is-open');
             $('.cnt__nav').toggleClass('is-open');
         });
+
     </script>
 
 
@@ -420,6 +421,7 @@
             });
 
         });
+
     </script>
 
 
@@ -428,6 +430,7 @@
         $(document).ready(function() {
             $("#myModal").modal('show');
         });
+
     </script>
 
 
@@ -474,14 +477,37 @@
         ScrollTrigger.matchMedia({
 
             // desktop
-            "(min-width: 1200px)": function() {
+            "(min-width: 2000px)": function() {
                 // setup animations and ScrollTriggers for screens 800px wide or greater (desktop) here...
                 // These ScrollTriggers will be reverted/killed when the media query doesn't match anymore.
 
-                //SATURATION
 
 
                 //SATURATION
+                gsap.fromTo(".quote-translate1", {
+                    x: 10
+                }, {
+                    x: -1400,
+
+                    duration: 1,
+
+                    scrollTrigger: {
+                        trigger: ".splash",
+                        ease: "power2.inOut",
+
+
+                        start: "top top",
+                        end: "bottom top",
+                        scrub: true,
+
+                    }
+                });
+
+                //SATURATION
+
+            },
+
+            "(max-width: 1999px)": function() {
                 gsap.fromTo(".quote-translate1", {
                     x: 10
                 }, {
@@ -557,6 +583,8 @@
 
                     }
                 });
+
+
             },
             // iPad Pro
             "(max-width: 1199px)": function() {
@@ -859,6 +887,7 @@
         // xPercent: 0
         // }, 0);
         // });
+
     </script>
 
 
@@ -870,7 +899,10 @@
         }
 
         document.addEventListener('mousemove', onMouseMove);
+
     </script>
 
 
-</body></html>
+</body>
+
+</html>
