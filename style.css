@@ -233,7 +233,7 @@ footer p {
 
 
 p {
-    font-size: calc(0.8rem + 0.3vw);
+    font-size: calc(0.8rem + 0.2vw);
     font-family: Raleway;
     font-weight: 400;
 
@@ -1211,7 +1211,10 @@ a {
 
 .form-check-input {
     border: 1px solid black;
+background-color: transparent;
 }
+
+
 
 .form-check-input:focus {
     box-shadow: none;
@@ -1414,7 +1417,7 @@ a {
     }
 
     p {
-        font-size: calc(0.8rem + 0.3vw);
+        font-size: calc(0.8rem + 0.2vw);
         font-family: Raleway;
         font-weight: 400;
         margin-bottom: 0 !important;
@@ -1433,6 +1436,7 @@ a {
         background-repeat: no-repeat;
         background-size: cover;
     }
+
 
     #events {
         background-image: url(img/froe.jpg);
