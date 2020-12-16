@@ -3,7 +3,9 @@ html {
 
 }
 
-
+.hmref {
+    font-size: calc(0.8rem + 0.2vw) !important;
+}
 
 
 body {
@@ -250,11 +252,17 @@ a {
     text-transform: uppercase;
 }
 
+.hmref a:hover {
+    letter-spacing: 1px !important;
+}
+
 a:hover {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-decoration: none;
     color: grey;
 }
+
+
 
 svg {
     padding-bottom: 2px;
@@ -1211,7 +1219,7 @@ a {
 
 .form-check-input {
     border: 1px solid black;
-background-color: transparent;
+    background-color: transparent;
 }
 
 
