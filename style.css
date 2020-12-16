@@ -600,7 +600,8 @@ textarea {
 #insta .content-txt,
 #events .content-txt,
 #collection .content-txt,
-#policy .content-txt {
+#policy .content-txt,
+#section0 .content-txt {
     padding-left: 0 !important;
 }
 
