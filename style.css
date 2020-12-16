@@ -1206,8 +1206,10 @@ a {
 
 .form-check-input {
     border: 1px solid black;
-    background-color: transparent !important;
+background-color: transparent;
 }
+
+
 
 .form-check-input:focus {
     box-shadow: none;
